@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
+import { ENV } from "./config/env.js";
 
-// Hardcoded MongoDB connection string
-const MONGO_URI = "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/";
-
+const MONGO_URI = ENV.MONGODB_URI;
 
 let cached = global._mongooseCache;
 

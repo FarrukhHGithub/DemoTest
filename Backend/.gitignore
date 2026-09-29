@@ -31,3 +31,7 @@ MEMORY.md
 .agent
 .vercel
 .env*
+
+ecosystem.config.cjs
+
+ecosystem.config.cjs

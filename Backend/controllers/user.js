@@ -63,15 +63,18 @@ export const getClientById = async (req, res, next) => {
   }
 };
 
+import { uploadToCloudinary } from '../utils/cloudinary.js';
+
 export const updateClientById = async (req, res, next) => {
   const { clientId } = req.params;
   const { name, email, gender, bloodGroup, emergencyContact, address } = req.body;
 
   try {
     let image;
-    // Check if a file is uploaded
+    // Check if a file is uploaded (memory buffer)
     if (req.file) {
-      image = req.file.path;
+      const result = await uploadToCloudinary(req.file.buffer, 'avatars');
+      image = result.secure_url;
     }
 
     const updatedClientData = { name, email, gender, bloodGroup, emergencyContact, address };
@@ -91,24 +94,6 @@ export const updateClientById = async (req, res, next) => {
     return res.status(500).json({ message: 'Internal server error' });
   }
 };
-
-// export const updateClientById = async (req, res, next) => {
-//   const { clientId } = req.params;
-//   const { name, email, gender, bloodGroup, emergencyContact, address } = req.body;
-//   const image = req.file.path;
-
-//   try {
-//     const updatedClient = await User.findByIdAndUpdate(clientId, { name, image, email, gender, bloodGroup, emergencyContact, address });
-//     if (!updatedClient) {
-//       return res.status(404).json({ message: 'Client not found' });
-//     }
-//     const { password: omit, ...clientData } = updatedClient._doc;
-//     return res.status(200).json(clientData);
-//   } catch (error) {
-//     console.error('Error updating client:', error);
-//     return res.status(500).json({ message: 'Internal server error' });
-//   }
-// };
 
 export const changePassword = async (req, res, next) => {
   const { userId, oldPassword, newPassword } = req.body;
@@ -203,13 +188,15 @@ export const deleteUser = async (req, res) => {
 
 
 
+import { ENV } from '../config/env.js';
+
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || 'smtp.office365.com',
-  port: parseInt(process.env.SMTP_PORT || '587', 10),
+  host: ENV.SMTP_HOST,
+  port: parseInt(ENV.SMTP_PORT, 10),
   secure: false, // true for 465, false for other ports
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS
+    user: ENV.SMTP_USER,
+    pass: ENV.SMTP_PASS
   }
 });
 
@@ -236,8 +223,8 @@ export const sendEmail = (req, res) => {
 
   // Create email options
   const mailOptions = {
-    from: process.env.SMTP_USER,
-    to: process.env.CLINIC_NOTIFY_EMAIL || process.env.SMTP_USER,
+    from: ENV.SMTP_USER,
+    to: ENV.CLINIC_NOTIFY_EMAIL || ENV.SMTP_USER,
     subject: subject,
     html: emailBody // Use HTML for formatted email body
   };

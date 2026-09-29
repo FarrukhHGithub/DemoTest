@@ -1,11 +1,12 @@
 import passport from "passport";
 import passportGoogleOAuth2 from 'passport-google-oauth2';
 import userdb from './models/google.js';
+import { ENV } from './config/env.js';
 
 passport.use(new passportGoogleOAuth2.Strategy({
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "/api/auth/google/callback",
+    clientID: ENV.GOOGLE_CLIENT_ID,
+    clientSecret: ENV.GOOGLE_CLIENT_SECRET,
+    callbackURL: ENV.GOOGLE_CALLBACK_URL,
     passReqToCallback: true
 },
     async (request, accessToken, refreshToken, profile, done) => {

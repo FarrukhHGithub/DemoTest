@@ -9,7 +9,7 @@ module.exports = {
         PORT: 8800,
         MONGO_URI: "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/",
         MONGODB_URI: "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/",
-        SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+        SENDGRID_API_KEY: ""
       }
     }
   ]

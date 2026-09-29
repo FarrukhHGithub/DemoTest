@@ -11,6 +11,7 @@
           "routes/**",
           "utils/**",
           "templates/**",
+          "config/**",
           "db.js",
           "googleOAuth.js",
           "middleware.js",

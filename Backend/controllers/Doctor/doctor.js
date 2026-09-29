@@ -5,6 +5,8 @@ import { fileURLToPath } from 'url';
 
 import Doctor from "../../models/doctor/doctor.js";
 
+import { uploadToCloudinary } from '../../../utils/cloudinary.js';
+
 export const createDoctor = async (req, res) => {
     try {
         const { fullName, email, phone, address } = req.body;
@@ -12,7 +14,8 @@ export const createDoctor = async (req, res) => {
             return res.status(400).json({ error: 'Missing required fields' });
         }
 
-        const profileImage = req.file.path;
+        const result = await uploadToCloudinary(req.file.buffer, 'doctors');
+        const profileImage = result.secure_url;
 
         const doctor = new Doctor({
             fullName,
@@ -58,20 +61,8 @@ export const updateDoctor = async (req, res) => {
         console.log('Request Params ID:', req.params.id);
         console.log('Request Body:', req.body);
         if (req.file) {
-            console.log('Updated Profile Image:', req.file.path);
-            const doctor = await Doctor.findById(req.params.id);
-
-            if (doctor && doctor.profileImage) {
-                const oldProfileImagePath = path.join(__dirname, 'uploads', doctor.profileImage);
-                fs.unlink(oldProfileImagePath, (err) => {
-                    if (err) {
-                        console.error('Failed to delete old profile image:', err);
-                    } else {
-                        console.log('Old profile image deleted successfully.');
-                    }
-                });
-            }
-            req.body.profileImage = req.file.path;  // Assign the new file path to the profileImage field
+            const result = await uploadToCloudinary(req.file.buffer, 'doctors');
+            req.body.profileImage = result.secure_url;  // Assign the new file url to the profileImage field
         }
         const updatedDoctor = await Doctor.findByIdAndUpdate(req.params.id, req.body, { new: true });
         console.log('Updated doctor:', updatedDoctor);

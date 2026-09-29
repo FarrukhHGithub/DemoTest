@@ -35,13 +35,16 @@ const sendWhatsAppMessage = async (phoneNumber, filePath) => {
     mediaUrl: `http://yourserver.com/${filePath}`
   });
 };
+import { uploadToCloudinary } from '../../utils/cloudinary.js';
+
 export const uploadFile = async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ error: 'No file uploaded' });
     }
 
-    const filePath = req.file.path;
+    const result = await uploadToCloudinary(req.file.buffer, 'shared');
+    const filePath = result.secure_url;
     res.status(200).json({ message: 'File uploaded successfully', filePath: filePath });
   } catch (error) {
     console.error('Error uploading file:', error);

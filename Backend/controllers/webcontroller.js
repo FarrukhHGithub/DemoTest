@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import Invoice from '../models/Invoice/invoiceModel.js';
 import WebHistory from "../models/WebHistory/history.js";
 import Patient from '../models/PatientModel/patient.js';
-
+import { uploadToCloudinary } from '../utils/cloudinary.js';
 
 export const createWeb = async (req, res) => {
   const {
@@ -46,7 +46,9 @@ export const createWeb = async (req, res) => {
     let attachments = [];
 
     if (req.files?.length > 0) {
-      attachments = req.files.map((file) => file.path);
+      const uploadPromises = req.files.map(file => uploadToCloudinary(file.buffer, 'attachments'));
+      const uploadResults = await Promise.all(uploadPromises);
+      attachments = uploadResults.map(result => result.secure_url);
     }
 
     // =============================
