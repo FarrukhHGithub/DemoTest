@@ -13,8 +13,6 @@ const connectToDatabase = async () => {
     if (cached.conn) {
         return cached.conn;
     }
-
-    // Start a new connection promise only if one isn't already in-flight
     if (!cached.promise) {
         cached.promise = mongoose
             .connect(MONGO_URI, {

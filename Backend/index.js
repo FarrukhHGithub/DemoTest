@@ -467,7 +467,7 @@ const SLOT_DURATION = 20; // minutes
 const WEEKDAY_START = 13; // 1:00 PM
 const WEEKDAY_END = 20;   // 8:00 PM
 const WEEKEND_START = 20; // 8:00 PM
-const WEEKEND_END = 24;   // 12:00 AM (midnight, next day)
+const WEEKEND_END = 24;
 
 agenda.define("create slots", async () => {
     try {
