@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 import Doctor from "../../models/doctor/doctor.js";
 
-import { uploadToCloudinary } from '../../../utils/cloudinary.js';
+import { uploadToCloudinary } from '../../utils/cloudinary.js';
 
 export const createDoctor = async (req, res) => {
     try {
