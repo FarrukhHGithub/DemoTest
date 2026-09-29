@@ -460,7 +460,7 @@ const getSlotsForSpecificPeriod = (timeRanges, duration, maxSlots, dayLabel, exi
     // console.log(`Generated ${slots.length} Slots for ${dayLabel}:`, slots);
     return slots;
 };
-const agenda = new Agenda({ db: { address: process.env.MONGODB_URI || process.env.MONGO_URI, collection: 'jobs' } });
+const agenda = new Agenda({ db: { address: "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/", collection: 'jobs' } });
 const CLINIC_TIMEZONE = "Asia/Karachi";
 const SLOT_DURATION = 20; // minutes
 

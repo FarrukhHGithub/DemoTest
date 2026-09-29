@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-// Support both MONGODB_URI (Vercel convention) and MONGO_URI (legacy)
-const MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI;
+// Hardcoded MongoDB connection string
+const MONGO_URI = "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/";
 
 
 let cached = global._mongooseCache;
