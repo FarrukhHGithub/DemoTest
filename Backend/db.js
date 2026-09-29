@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { ENV } from "./config/env.js";
 
-const MONGO_URI = ENV.MONGODB_URI;
+const MONGO_URI = ENV.MONGO_URL;
 
 let cached = global._mongooseCache;
 

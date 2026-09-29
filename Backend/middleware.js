@@ -27,7 +27,7 @@ const setupMiddleware = () => {
         resave: false,
         saveUninitialized: false,
         store: MongoStore.create({
-            mongoUrl: ENV.MONGODB_URI,
+            mongoUrl: ENV.MONGO_URL,
             collectionName: 'sessions'
         }),
         cookie: {

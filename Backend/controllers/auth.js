@@ -1,5 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import { ENV } from '../config/env.js';
 import { createError } from '../utils/error.js';
 import User from '../models/User.js'; // Import your User model
 import mongoose from 'mongoose';
@@ -18,7 +19,7 @@ export const login = async (req, res, next) => {
     if (!isValidPassword) {
       return res.status(400).json({ message: 'Invalid  or password' });
     }
-    const token = jwt.sign({ email, id: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
+    const token = jwt.sign({ email, id: user._id }, ENV.SESSION_SECRET, { expiresIn: '1d' });
     res.cookie('access_token', token, {
       httpOnly: true,
       maxAge: 1 * 24 * 60 * 60 * 1000, 
@@ -43,7 +44,7 @@ export const register = async (req, res, next) => {
     const newUser = new User(req.body);
     await newUser.save();
 
-    const token = jwt.sign({ email }, process.env.JWT_SECRET, { expiresIn: '1d' });
+    const token = jwt.sign({ email }, ENV.SESSION_SECRET, { expiresIn: '1d' });
     res.cookie('access_token', token, { httpOnly: true }).status(201).json({ message: 'Registration successful', token });
   } catch (error) {
     console.error('Error registering user:', error);

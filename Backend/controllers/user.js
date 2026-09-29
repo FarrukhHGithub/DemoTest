@@ -16,7 +16,7 @@ export const login = async (req, res, next) => {
     if (!isValidPassword) {
       return res.status(400).json({ message: 'Invalid email or password' });
     }
-    const token = jwt.sign({ email: req.body.email, id: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
+    const token = jwt.sign({ email: req.body.email, id: user._id }, ENV.SESSION_SECRET, { expiresIn: '1d' });
 
     const { password, ...details } = user._doc;
     res.cookie('access_token', token, { httpOnly: true });
@@ -40,7 +40,7 @@ export const register = async (req, res, next) => {
     const newUser = new User({ name, email, password, isAdmin }); // Include isAdmin field in the user creation
     await newUser.save();
 
-    const token = jwt.sign({ email }, process.env.JWT_SECRET, { expiresIn: '1d' });
+    const token = jwt.sign({ email }, ENV.SESSION_SECRET, { expiresIn: '1d' });
     res.cookie('access_token', token, { httpOnly: true }).status(201).json({ message: 'Registration successful', token });
   } catch (error) {
     console.error('Error registering user:', error);
