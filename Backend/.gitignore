@@ -29,3 +29,5 @@ package-lock.json
 # AI / Agent files
 MEMORY.md
 .agent
+.vercel
+.env*
