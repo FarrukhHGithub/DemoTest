@@ -1,0 +1,2378 @@
+{
+  "communities": {
+    "0": [
+      "website_src_baseurl",
+      "website_src_components_appointment_axiosbasequery",
+      "website_src_components_appointment_axiosbasequery_axiosbasequery",
+      "website_src_components_attachment",
+      "website_src_components_attachment_attachment",
+      "website_src_components_attachmentlist",
+      "website_src_components_attachmentlist_attachmentlist",
+      "website_src_components_doctor_appointments_appointmentcard",
+      "website_src_components_doctor_appointments_appointmentcard_appointmentcard",
+      "website_src_components_doctor_appointments_appointments",
+      "website_src_components_doctor_appointments_appointments_appointments",
+      "website_src_components_doctor_appointments_appointments_dummydata",
+      "website_src_components_doctor_blogs_addblog",
+      "website_src_components_doctor_blogs_addblog_addblog",
+      "website_src_components_doctor_blogs_blogsedit",
+      "website_src_components_doctor_blogs_blogsedit_blogsedit",
+      "website_src_components_doctor_changepassword_changepassword",
+      "website_src_components_doctor_changepassword_changepassword_changepassword",
+      "website_src_components_doctor_dashboard_dashboard",
+      "website_src_components_doctor_dashboard_dashboard_dashboard",
+      "website_src_components_doctor_dashboard_doctor_dashboardpage",
+      "website_src_components_doctor_dashboard_doctor_dashboardpage_dashboardpage",
+      "website_src_components_doctor_dashboard_patientdashboard",
+      "website_src_components_doctor_dashboard_patientdashboard_patientdashboard",
+      "website_src_components_doctor_dashboardlayout_dashboardlayout",
+      "website_src_components_doctor_dashboardlayout_dashboardlayout_dashboardlayout",
+      "website_src_components_doctor_invoice_doctorinvoice",
+      "website_src_components_doctor_invoice_doctorinvoice_columns",
+      "website_src_components_doctor_invoice_doctorinvoice_doctorinvoice",
+      "website_src_components_doctor_invoice_doctorinvoice_dummydata",
+      "website_src_components_doctor_patientfavourite_patientfavourite",
+      "website_src_components_doctor_patientfavourite_patientfavourite_patientfavouritedoctor",
+      "website_src_components_doctor_prescription_prescription",
+      "website_src_components_doctor_prescription_prescription_prescription",
+      "website_src_components_doctor_profilesetting_doctorprofilesetting",
+      "website_src_components_doctor_profilesetting_doctorprofilesetting_doctorprofilesetting",
+      "website_src_components_doctor_profilesetting_patientprofilesetting",
+      "website_src_components_doctor_profilesetting_patientprofilesetting_patientprofilesetting",
+      "website_src_components_doctor_profilesetting_profilesetting",
+      "website_src_components_doctor_profilesetting_profilesetting_profilesetting",
+      "website_src_components_doctor_reviews_reviews",
+      "website_src_components_doctor_reviews_reviews_reviews",
+      "website_src_components_drpozone2",
+      "website_src_components_drpozone2_advanceddropzonedemo",
+      "website_src_components_login_signin",
+      "website_src_components_login_signin_signin",
+      "website_src_components_login_signinform",
+      "website_src_components_login_signinform_signinform",
+      "website_src_components_login_signup",
+      "website_src_components_login_signup_signup",
+      "website_src_components_login_socialsignup",
+      "website_src_components_login_socialsignup_socialsignup",
+      "website_src_components_ui_component_customtable",
+      "website_src_components_ui_component_customtable_customtable",
+      "website_src_components_ui_dashboardsidebar",
+      "website_src_components_ui_dashboardsidebar_dashboardsidebar",
+      "website_src_components_ui_form_imageupload",
+      "website_src_components_ui_form_imageupload_imageupload",
+      "website_src_redux_api_authapi",
+      "website_src_redux_api_authapi_useuserloginmutation",
+      "website_src_redux_hooks_useauthcheck",
+      "website_src_redux_hooks_useauthcheck_useauthcheck"
+    ],
+    "1": [
+      "backend_controllers_healthinfocontroller_healthinfocontroller",
+      "backend_controllers_healthinfocontroller_healthinfocontroller_createhealthinformation",
+      "backend_controllers_healthinfocontroller_healthinfocontroller_deletehealthinformationbypatientid",
+      "backend_controllers_healthinfocontroller_healthinfocontroller_getallhealthinformation",
+      "backend_controllers_healthinfocontroller_healthinfocontroller_gethealthinformationbypatientid",
+      "backend_controllers_healthinfocontroller_healthinfocontroller_updatehealthinformationbypatientid",
+      "backend_controllers_medicalreport_medicalreport",
+      "backend_controllers_medicalreport_medicalreport_createmedicalrecord",
+      "backend_controllers_medicalreport_medicalreport_deletemedicalrecord",
+      "backend_controllers_medicalreport_medicalreport_getallmedicalrecords",
+      "backend_controllers_medicalreport_medicalreport_getmedicalrecordsbypatientid",
+      "backend_controllers_medicalreport_medicalreport_updatemedicalrecord",
+      "backend_controllers_medicine_medicine",
+      "backend_controllers_medicine_medicine_createmedicine",
+      "backend_controllers_medicine_medicine_deletemedicine",
+      "backend_controllers_medicine_medicine_getallmedicines",
+      "backend_controllers_medicine_medicine_getmedicinebyid",
+      "backend_controllers_medicine_medicine_updatemedicine",
+      "backend_controllers_patientcontroller_patients",
+      "backend_controllers_patientcontroller_patients_archivepatientbyemail",
+      "backend_controllers_patientcontroller_patients_bulkrestorepatientsbyemail",
+      "backend_controllers_patientcontroller_patients_changepassword",
+      "backend_controllers_patientcontroller_patients_createpatient",
+      "backend_controllers_patientcontroller_patients_deletepatient",
+      "backend_controllers_patientcontroller_patients_fetchrecentpatients",
+      "backend_controllers_patientcontroller_patients_getallactivepatients",
+      "backend_controllers_patientcontroller_patients_getallpatients",
+      "backend_controllers_patientcontroller_patients_getarchivedpatientbyemail",
+      "backend_controllers_patientcontroller_patients_getarchivedpatients",
+      "backend_controllers_patientcontroller_patients_getmedicalrecordsbypatientid",
+      "backend_controllers_patientcontroller_patients_getpatientbyid",
+      "backend_controllers_patientcontroller_patients_gettotalpatientcount",
+      "backend_controllers_patientcontroller_patients_restorepatient",
+      "backend_controllers_patientcontroller_patients_restorepatientbyemail",
+      "backend_controllers_patientcontroller_patients_searcharchivedpatients",
+      "backend_controllers_patientcontroller_patients_updatepatient",
+      "backend_models_healthinfo_healthinfo",
+      "backend_models_healthinfo_healthinfo_healthinformation",
+      "backend_models_healthinfo_healthinfo_healthinformationschema",
+      "backend_models_history_historymodel",
+      "backend_models_history_historymodel_patienthistoryschema",
+      "backend_models_medicalreport_medicalreportmodel",
+      "backend_models_medicalreport_medicalreportmodel_medicalrecord",
+      "backend_models_medicalreport_medicalreportmodel_medicalrecordschema",
+      "backend_models_medicine_medicine",
+      "backend_models_medicine_medicine_medicine",
+      "backend_models_medicine_medicine_medicineschema",
+      "backend_models_patientmodel_patient",
+      "backend_models_patientmodel_patient_patientschema",
+      "backend_models_utils_api",
+      "backend_models_utils_api_gettotalpatientscountfrommongodb",
+      "backend_routes_medicineroutes",
+      "backend_routes_medicineroutes_router"
+    ],
+    "2": [
+      "backend_controllers_invoicecontroller_item_updateitem",
+      "website_src_components_doctor_schedule_schedule",
+      "website_src_components_doctor_schedule_schedule_schedule",
+      "website_src_components_doctor_searchdoctor_searchsidebar",
+      "website_src_components_doctor_searchdoctor_searchsidebar_searchsidebar",
+      "website_src_components_doctor_treatment_treatment",
+      "website_src_components_doctor_treatment_treatment_treatment",
+      "website_src_components_doctor_treatment_treatmentedit",
+      "website_src_components_doctor_treatment_treatmentedit_treatmentedit",
+      "website_src_components_doctor_treatment_treatmentoverview",
+      "website_src_components_doctor_treatment_treatmentoverview_treatmentoverview",
+      "website_src_components_ui_form_inputautocompleteform",
+      "website_src_components_ui_form_inputautocompleteform_inputautocompleteform",
+      "website_src_components_ui_form_inputautocompleteform_mockval",
+      "website_src_components_ui_form_medicinerangepickerform",
+      "website_src_components_ui_form_medicinerangepickerform_medicinerangepickerform",
+      "website_src_components_ui_form_selectform",
+      "website_src_components_ui_form_selectform_selectform",
+      "website_src_components_ui_form_selectformformedicine",
+      "website_src_components_ui_form_selectformformedicine_selectformformedicine",
+      "website_src_components_ui_form_tabform",
+      "website_src_components_ui_form_tabform_tabform",
+      "website_src_components_ui_form_timepicer",
+      "website_src_components_ui_form_timepicer_timepicer",
+      "website_src_components_ui_usemodal",
+      "website_src_components_ui_usemodal_usemodal",
+      "website_src_constant_global",
+      "website_src_constant_global_appointemntstatusoption",
+      "website_src_constant_global_appointmentstatus",
+      "website_src_constant_global_datepickersinglepresets",
+      "website_src_constant_global_daterangepresets",
+      "website_src_constant_global_daysarray",
+      "website_src_constant_global_diagnosisoptions",
+      "website_src_constant_global_diseaseoptions",
+      "website_src_constant_global_doctorspecialistarray",
+      "website_src_constant_global_doctorspecialistoptions",
+      "website_src_constant_global_doctortimeslot",
+      "website_src_constant_global_dosagelist",
+      "website_src_constant_global_dosageoptions",
+      "website_src_constant_global_frequencieslist",
+      "website_src_constant_global_frequencyoptions",
+      "website_src_constant_global_gender",
+      "website_src_constant_global_genderoptions",
+      "website_src_constant_global_medical_diagnoses",
+      "website_src_constant_global_medical_diseases",
+      "website_src_constant_global_medicalcheckuplist",
+      "website_src_constant_global_medicalcheckupoptions",
+      "website_src_constant_global_patientstatus",
+      "website_src_constant_global_patientstatuslist",
+      "website_src_utils_messagesideeffect",
+      "website_src_utils_messagesideeffect_usemessageeffect"
+    ],
+    "3": [
+      "website_src_app_app",
+      "website_src_components_booking_bookingcheckout_checkoutpage",
+      "website_src_components_booking_bookingcheckout_checkoutpage_checkoutpage",
+      "website_src_components_booking_doctorbooking_doctorbooking",
+      "website_src_components_booking_doctorbooking_doctorbooking_doctorbooking",
+      "website_src_components_booking_doctorbooking_doctorbrief",
+      "website_src_components_booking_doctorbooking_doctorbrief_doctorbrief",
+      "website_src_components_booking_doctorbooking_timeslotbuttons",
+      "website_src_components_booking_doctorbooking_timeslotbuttons_timeslotbuttons",
+      "website_src_components_booking_filepreviews",
+      "website_src_components_booking_filepreviews_filepreviews",
+      "website_src_components_booking_personalinformation",
+      "website_src_components_booking_personalinformation_personalinformation",
+      "website_src_components_booking_selectdateandtime",
+      "website_src_components_booking_selectdateandtime_selectdateandtime",
+      "website_src_components_home_bookourdoctor_bookdoctor",
+      "website_src_components_home_bookourdoctor_bookdoctor_bookdoctor",
+      "website_src_components_home_bookourdoctor_bookdoctor_mockdoctors",
+      "website_src_components_home_bookourdoctor_doctorwidget",
+      "website_src_components_home_bookourdoctor_doctorwidget_doctorwidget",
+      "website_src_helpers_config_envconfig",
+      "website_src_helpers_config_envconfig_getbaseurl",
+      "website_src_index",
+      "website_src_redux_api_appointmentapi",
+      "website_src_redux_api_appointmentapi_appointmentapi",
+      "website_src_redux_api_baseapi",
+      "website_src_redux_api_baseapi_baseapi",
+      "website_src_redux_api_doctorapi",
+      "website_src_redux_api_doctorapi_doctorapi",
+      "website_src_redux_api_favouriteapi",
+      "website_src_redux_api_favouriteapi_favouriteapi",
+      "website_src_redux_api_medicineapi",
+      "website_src_redux_api_medicineapi_medicineapi",
+      "website_src_redux_api_patientapi",
+      "website_src_redux_api_patientapi_patientapi",
+      "website_src_redux_api_prescriptionapi",
+      "website_src_redux_api_prescriptionapi_prescriptionapi",
+      "website_src_redux_api_reviewsapi",
+      "website_src_redux_api_reviewsapi_reviewapi",
+      "website_src_redux_api_timeslotapi",
+      "website_src_redux_api_timeslotapi_timeslotapi",
+      "website_src_redux_feature_invoiceslice",
+      "website_src_redux_feature_invoiceslice_initialstate",
+      "website_src_redux_feature_invoiceslice_invoiceslice",
+      "website_src_redux_rootreducer",
+      "website_src_redux_rootreducer_reducer",
+      "website_src_redux_store",
+      "website_src_redux_store_store",
+      "website_src_redux_tag_types",
+      "website_src_redux_tag_types_tagtypelist",
+      "website_src_redux_tag_types_tagtypes"
+    ],
+    "4": [
+      "website_src_app",
+      "website_src_app_appointmentpage",
+      "website_src_app_approutes",
+      "website_src_app_attachment",
+      "website_src_app_cancel",
+      "website_src_app_changepassword",
+      "website_src_app_contact",
+      "website_src_app_dashboard",
+      "website_src_app_home",
+      "website_src_app_loadingspinner",
+      "website_src_app_notfound",
+      "website_src_app_prescription",
+      "website_src_app_profilesetting",
+      "website_src_app_scrolltotop",
+      "website_src_app_signinform",
+      "website_src_app_success",
+      "website_src_authcontext",
+      "website_src_authcontext_authcontext",
+      "website_src_authcontext_authprovider",
+      "website_src_authcontext_useauth",
+      "website_src_components_appointment_appointmentmodals",
+      "website_src_components_appointment_appointmentmodals_appointmentmodals",
+      "website_src_components_appointment_appointmentpage",
+      "website_src_components_appointment_appointmentpage_appointmentpage",
+      "website_src_components_appointment_appointmentpage_initialvalue",
+      "website_src_components_appointment_appointmentslotcard",
+      "website_src_components_appointment_appointmentslotcard_appointmentslotcard",
+      "website_src_components_appointment_selectapppointment",
+      "website_src_components_appointment_selectapppointment_selectappointment",
+      "website_src_components_appointment_selectapppointment_timezoneoptions",
+      "website_src_components_appointment_serviceselector",
+      "website_src_components_appointment_serviceselector_serviceselector",
+      "website_src_components_drivertour",
+      "website_src_components_drivertour_drivertour",
+      "website_src_components_drivertour_handletournextclick",
+      "website_src_components_drivertourprovider",
+      "website_src_components_drivertourprovider_tourcontext",
+      "website_src_components_drivertourprovider_tourprovider",
+      "website_src_components_floatingguidebutton",
+      "website_src_components_floatingguidebutton_floatingguidebutton",
+      "website_src_constant_toursteps",
+      "website_src_constant_toursteps_tour_steps",
+      "website_src_hooks_usedrivertour",
+      "website_src_hooks_usedrivertour_usedrivertour",
+      "website_src_private",
+      "website_src_private_privateroute",
+      "website_src_utils_timezone",
+      "website_src_utils_timezone_convertutctotimezone"
+    ],
+    "5": [
+      "backend_controllers_auth",
+      "backend_controllers_auth_changepassword",
+      "backend_controllers_auth_getuserbyid",
+      "backend_controllers_auth_login",
+      "backend_controllers_auth_register",
+      "backend_controllers_auth_updatedoctorbyid",
+      "backend_controllers_auth_updateuserbyid",
+      "backend_controllers_user",
+      "backend_controllers_user_changepassword",
+      "backend_controllers_user_deleteuser",
+      "backend_controllers_user_getallusers",
+      "backend_controllers_user_getclientbyid",
+      "backend_controllers_user_login",
+      "backend_controllers_user_logout",
+      "backend_controllers_user_register",
+      "backend_controllers_user_sendemail",
+      "backend_controllers_user_transporter",
+      "backend_controllers_user_updateclientbyid",
+      "backend_models_client",
+      "backend_models_client_clientschema",
+      "backend_models_client_user",
+      "backend_models_user",
+      "backend_models_user_user",
+      "backend_models_user_userschema",
+      "backend_routes_auth",
+      "backend_routes_auth_router",
+      "backend_routes_userauth",
+      "backend_routes_userauth_router",
+      "backend_routes_userauth_upload",
+      "backend_routes_users",
+      "backend_routes_users_router",
+      "backend_utils_error",
+      "backend_utils_error_createerror",
+      "backend_utils_multer",
+      "backend_utils_multer_storage",
+      "backend_utils_multer_upload",
+      "backend_utils_verifytoken",
+      "backend_utils_verifytoken_verifyadmin",
+      "backend_utils_verifytoken_verifytoken",
+      "backend_utils_verifytoken_verifyuser"
+    ],
+    "6": [
+      "backend_controllers_webhistorycontroller_historycontroller",
+      "backend_controllers_webhistorycontroller_historycontroller_getwebhistorybyemail",
+      "backend_db",
+      "backend_db_connecttodatabase",
+      "backend_index",
+      "backend_index_agenda",
+      "backend_index_app",
+      "backend_index_corsoptions",
+      "backend_index_dirname",
+      "backend_index_filename",
+      "backend_index_getslotsforspecificperiod",
+      "backend_index_setcors",
+      "backend_routes_appointmentroutes",
+      "backend_routes_appointmentroutes_router",
+      "backend_routes_doctor",
+      "backend_routes_doctor_router",
+      "backend_routes_healthinforoutes",
+      "backend_routes_healthinforoutes_router",
+      "backend_routes_invoiceroutes",
+      "backend_routes_invoiceroutes_router",
+      "backend_routes_medicalreport",
+      "backend_routes_medicalreport_router",
+      "backend_routes_patientroutes",
+      "backend_routes_patientroutes_router",
+      "backend_routes_paymentroutes",
+      "backend_routes_paymentroutes_router",
+      "backend_routes_stripe",
+      "backend_routes_stripe_router",
+      "backend_routes_stripe_stripe",
+      "backend_routes_webhistoryroutes",
+      "backend_routes_webhistoryroutes_router",
+      "backend_routes_webroutes_router",
+      "backend_utils_authmiddleware",
+      "backend_utils_authmiddleware_authenticate",
+      "backend_utils_multerconfig",
+      "backend_utils_multerconfig_filefilter",
+      "backend_utils_multerconfig_storage",
+      "backend_utils_multerconfig_upload",
+      "backend_utils_multerconfig_uploads"
+    ],
+    "7": [
+      "dashboard_src_components_access",
+      "dashboard_src_components_access_access",
+      "dashboard_src_components_datas_servicesdata",
+      "dashboard_src_components_form",
+      "dashboard_src_components_form_button",
+      "dashboard_src_components_form_checkbox",
+      "dashboard_src_components_form_checkbox_checkbox",
+      "dashboard_src_components_form_checkboxe",
+      "dashboard_src_components_form_checkboxe_checkboxe",
+      "dashboard_src_components_form_datepickercomp",
+      "dashboard_src_components_form_datepickercomp_datepickercomp",
+      "dashboard_src_components_form_fromtodate",
+      "dashboard_src_components_form_fromtodate_fromtodate",
+      "dashboard_src_components_form_index",
+      "dashboard_src_components_form_input",
+      "dashboard_src_components_form_menuselect",
+      "dashboard_src_components_form_menuselect_menuselect",
+      "dashboard_src_components_form_menuselectss",
+      "dashboard_src_components_form_menuselectss_menuselectss",
+      "dashboard_src_components_form_select",
+      "dashboard_src_components_form_selectt",
+      "dashboard_src_components_form_selectt_selectt",
+      "dashboard_src_components_form_switchi",
+      "dashboard_src_components_form_switchi_switchi",
+      "dashboard_src_components_form_textarea",
+      "dashboard_src_components_form_textarea_textarea",
+      "dashboard_src_components_form_timepickercomp",
+      "dashboard_src_components_form_timepickercomp_timepickercomp",
+      "dashboard_src_components_modals_addapointmentmodal",
+      "dashboard_src_components_modals_addapointmentmodal_addappointmentmodal",
+      "dashboard_src_components_modals_editappointment",
+      "dashboard_src_components_modals_editappointment_editappointmentmodal",
+      "dashboard_src_components_tables_doctorstable",
+      "dashboard_src_components_tables_invoicetable",
+      "dashboard_src_components_tables_servicetable",
+      "dashboard_src_components_usedcomp_appointmentsused",
+      "dashboard_src_components_usedcomp_appointmentsused_appointmentsused",
+      "dashboard_src_screens_patients_patientlist",
+      "dashboard_src_screens_patients_patientlist_patientlist"
+    ],
+    "8": [
+      "backend_controllers_invoicecontroller_invoice",
+      "backend_controllers_invoicecontroller_invoice_createinvoice",
+      "backend_controllers_invoicecontroller_invoice_deleteinvoice",
+      "backend_controllers_invoicecontroller_invoice_getallinvoices",
+      "backend_controllers_invoicecontroller_invoice_getinvoicebyid",
+      "backend_controllers_invoicecontroller_invoice_getinvoicesbypatientid",
+      "backend_controllers_invoicecontroller_invoice_updateinvoice",
+      "backend_controllers_invoicecontroller_item",
+      "backend_controllers_invoicecontroller_item_createitem",
+      "backend_controllers_invoicecontroller_item_deleteitem",
+      "backend_controllers_invoicecontroller_item_getallitems",
+      "backend_controllers_invoicecontroller_item_getitembyid",
+      "backend_controllers_webcontroller",
+      "backend_controllers_webcontroller_createweb",
+      "backend_controllers_webcontroller_deleteweb",
+      "backend_controllers_webcontroller_getallappointments",
+      "backend_controllers_webcontroller_getallwebs",
+      "backend_controllers_webcontroller_getmonthlyearnings",
+      "backend_controllers_webcontroller_getnotifications",
+      "backend_controllers_webcontroller_gettodaywebappointments",
+      "backend_controllers_webcontroller_gettotalwebpatientcount",
+      "backend_controllers_webcontroller_getwebbyemail",
+      "backend_controllers_webcontroller_getwebbyid",
+      "backend_controllers_webcontroller_getwebbyids",
+      "backend_controllers_webcontroller_markallnotificationsasread",
+      "backend_controllers_webcontroller_updateweb",
+      "backend_models_invoice_invoicemodel",
+      "backend_models_invoice_invoicemodel_invoice",
+      "backend_models_invoice_invoicemodel_invoiceschema",
+      "backend_models_webhistory_history",
+      "backend_models_webhistory_history_webhistoryschema",
+      "backend_models_webmodels",
+      "backend_models_webmodels_webpatient",
+      "backend_models_webmodels_webpatientschema",
+      "backend_routes_webroutes"
+    ],
+    "9": [
+      "dashboard_redux_api_appointmentapi",
+      "dashboard_redux_api_appointmentapi_appointmentapi",
+      "dashboard_redux_api_authapi",
+      "dashboard_redux_api_authapi_authapi",
+      "dashboard_redux_api_baseapi",
+      "dashboard_redux_api_baseapi_baseapi",
+      "dashboard_redux_api_blogapi",
+      "dashboard_redux_api_blogapi_blogapi",
+      "dashboard_redux_api_doctorapi",
+      "dashboard_redux_api_doctorapi_doctorapi",
+      "dashboard_redux_api_favouriteapi",
+      "dashboard_redux_api_favouriteapi_favouriteapi",
+      "dashboard_redux_api_medicineapi",
+      "dashboard_redux_api_medicineapi_medicineapi",
+      "dashboard_redux_api_patientapi",
+      "dashboard_redux_api_patientapi_patientapi",
+      "dashboard_redux_api_prescriptionapi",
+      "dashboard_redux_api_prescriptionapi_prescriptionapi",
+      "dashboard_redux_api_reviewsapi",
+      "dashboard_redux_api_reviewsapi_reviewapi",
+      "dashboard_redux_api_timeslotapi",
+      "dashboard_redux_api_timeslotapi_timeslotapi",
+      "dashboard_redux_feature_invoiceslice",
+      "dashboard_redux_feature_invoiceslice_initialstate",
+      "dashboard_redux_feature_invoiceslice_invoiceslice",
+      "dashboard_redux_hooks_useauthcheck",
+      "dashboard_redux_hooks_useauthcheck_useauthcheck",
+      "dashboard_redux_rootreducer",
+      "dashboard_redux_rootreducer_reducer",
+      "dashboard_redux_store",
+      "dashboard_redux_store_store",
+      "dashboard_redux_tag_types",
+      "dashboard_redux_tag_types_tagtypelist",
+      "dashboard_redux_tag_types_tagtypes"
+    ],
+    "10": [
+      "dashboard_src_components_campaign_smscomp",
+      "dashboard_src_components_campaign_smscomp_sendtodata",
+      "dashboard_src_components_campaign_smscomp_smscomp",
+      "dashboard_src_components_campaign_whatsapp",
+      "dashboard_src_components_campaign_whatsapp_sendtodata",
+      "dashboard_src_components_campaign_whatsapp_whatsappcomp",
+      "dashboard_src_components_datas_sortsdatas",
+      "dashboard_src_components_form_button_button",
+      "dashboard_src_components_form_input_input",
+      "dashboard_src_components_form_select_select",
+      "dashboard_src_components_modals_addeditmedicine",
+      "dashboard_src_components_modals_addeditmedicine_addeditmedicinemodal",
+      "dashboard_src_components_modals_additeminvoicemodal",
+      "dashboard_src_components_modals_additeminvoicemodal_additemmodal",
+      "dashboard_src_components_modals_patientmedicineservicemodal",
+      "dashboard_src_components_modals_patientmedicineservicemodal_patientmedicineservicemodal",
+      "dashboard_src_screens_invoices_editinvoice",
+      "dashboard_src_screens_invoices_editinvoice_editinvoice",
+      "dashboard_src_screens_invoices_invoicetotalssection",
+      "dashboard_src_screens_invoices_invoicetotalssection_invoicetotalssection",
+      "dashboard_src_screens_login",
+      "dashboard_src_screens_medicine",
+      "dashboard_src_screens_medicine_medicine",
+      "dashboard_src_screens_notfound",
+      "dashboard_src_screens_notfound_notfound",
+      "dashboard_src_screens_patients_healthinfomation",
+      "dashboard_src_screens_patients_healthinfomation_healthinformation",
+      "dashboard_src_screens_patients_usehealthinformation",
+      "dashboard_src_screens_patients_usehealthinformation_usehealthinformation",
+      "dashboard_src_screens_register",
+      "dashboard_src_screens_register_modal",
+      "dashboard_src_screens_register_register",
+      "dashboard_src_screens_verifyotp",
+      "dashboard_src_screens_verifyotp_verifyotp"
+    ],
+    "11": [
+      "dashboard_package_dependencies_jspdf",
+      "dashboard_src_components_modals_fetchmodel_appointmentdetailsmodal",
+      "dashboard_src_components_patientdetail_components_attachmentssection",
+      "dashboard_src_components_patientdetail_components_attachmentssection_attachmentssection",
+      "dashboard_src_components_patientdetail_components_columns",
+      "dashboard_src_components_patientdetail_components_columns_healthinfocolumns",
+      "dashboard_src_components_patientdetail_components_columns_invoicecolumns",
+      "dashboard_src_components_patientdetail_components_columns_invoicestatuscolors",
+      "dashboard_src_components_patientdetail_components_columns_medicalrecordcolumns",
+      "dashboard_src_components_patientdetail_components_columns_renderprofiledatacolumns",
+      "dashboard_src_components_patientdetail_components_columns_renderwebpatientdatacolumns",
+      "dashboard_src_components_patientdetail_components_editmedicalrecordmodal",
+      "dashboard_src_components_patientdetail_components_editmedicalrecordmodal_editmedicalrecordmodal",
+      "dashboard_src_components_patientdetail_components_healthinfosection",
+      "dashboard_src_components_patientdetail_components_healthinfosection_healthinfosection",
+      "dashboard_src_components_patientdetail_components_invoicesection",
+      "dashboard_src_components_patientdetail_components_invoicesection_invoicesection",
+      "dashboard_src_components_patientdetail_components_medicalrecordssection",
+      "dashboard_src_components_patientdetail_components_medicalrecordssection_medicalrecordssection",
+      "dashboard_src_components_patientdetail_components_patientinfosection",
+      "dashboard_src_components_patientdetail_components_patientinfosection_patientinfosection",
+      "dashboard_src_components_patientdetail_components_pdfgenerator",
+      "dashboard_src_components_patientdetail_components_pdfgenerator_formatdate",
+      "dashboard_src_components_patientdetail_components_pdfgenerator_formatdateonly",
+      "dashboard_src_components_patientdetail_components_pdfgenerator_pdfgenerator",
+      "dashboard_src_components_patientdetail_components_pdfgenerator_val",
+      "dashboard_src_components_patientdetail_detail",
+      "dashboard_src_components_patientdetail_detail_patientdetails",
+      "dashboard_src_components_patientdetail_editmodal",
+      "dashboard_src_components_patientdetail_editmodal_editmodal",
+      "dashboard_src_screens_invoices_invoiceactions",
+      "dashboard_src_screens_invoices_invoiceactions_invoiceactions",
+      "jspdf"
+    ],
+    "12": [
+      "dashboard_src_app",
+      "dashboard_src_app_appointments",
+      "dashboard_src_app_archivedpatients",
+      "dashboard_src_app_campaings",
+      "dashboard_src_app_createinvoice",
+      "dashboard_src_app_createpatient",
+      "dashboard_src_app_dashboard",
+      "dashboard_src_app_doctorprofile",
+      "dashboard_src_app_editinvoice",
+      "dashboard_src_app_editpayment",
+      "dashboard_src_app_invoices",
+      "dashboard_src_app_login",
+      "dashboard_src_app_medicine",
+      "dashboard_src_app_newmedicalrecode",
+      "dashboard_src_app_notfound",
+      "dashboard_src_app_patientprofile",
+      "dashboard_src_app_patients",
+      "dashboard_src_app_payments",
+      "dashboard_src_app_previewinvoice",
+      "dashboard_src_app_previewpayment",
+      "dashboard_src_app_receptions",
+      "dashboard_src_app_register",
+      "dashboard_src_app_services",
+      "dashboard_src_app_settings",
+      "dashboard_src_app_users",
+      "dashboard_src_components_notificationcontext",
+      "dashboard_src_components_notificationcontext_notificationcontext",
+      "dashboard_src_components_notificationcontext_notificationprovider",
+      "dashboard_src_components_notifications_toast",
+      "dashboard_src_components_notifications_toast_toast"
+    ],
+    "13": [
+      "dashboard_src_baseurl",
+      "dashboard_src_components_modals_medicalrecodmodal",
+      "dashboard_src_components_modals_medicalrecodmodal_medicalrecodmodal",
+      "dashboard_src_components_tables_appointmentpatientrow",
+      "dashboard_src_components_tables_appointmentpatientrow_appointmentpatientrow",
+      "dashboard_src_components_tables_appointmentpatientrow_renderappointmentdetails",
+      "dashboard_src_components_tables_patientrow",
+      "dashboard_src_components_tables_patientrow_patientrow",
+      "dashboard_src_components_tables_patientrow_renderappointmentdetails",
+      "dashboard_src_components_tables_patienttable",
+      "dashboard_src_components_tables_webpatientrow",
+      "dashboard_src_components_tables_webpatientrow_webpatientrow",
+      "dashboard_src_components_usedcomp_personalinfo",
+      "dashboard_src_components_usedcomp_personalinfo_personalinfo",
+      "dashboard_src_components_usedcomp_personalinfo_rationale_78",
+      "dashboard_src_screens_patients_api",
+      "dashboard_src_screens_patients_api_fetchdata",
+      "dashboard_src_screens_patients_createpatient",
+      "dashboard_src_screens_patients_createpatient_createpatient",
+      "dashboard_src_screens_patients_fetch",
+      "dashboard_src_screens_patients_fetch_fetchmedicalrecords",
+      "dashboard_src_screens_patients_fetchservice_api",
+      "dashboard_src_screens_patients_fetchservice_api_getappointmentdata",
+      "dashboard_src_screens_patients_fetchservice_api_getservices",
+      "dashboard_src_screens_patients_medicalrecord",
+      "dashboard_src_screens_patients_medicalrecord_medicalrecord",
+      "dashboard_src_screens_patients_medicalrecorditem",
+      "dashboard_src_screens_patients_medicalrecorditem_medicalrecorditem",
+      "dashboard_src_screens_schedule_api",
+      "dashboard_src_screens_schedule_api_fetchappointmentdata"
+    ],
+    "14": [
+      "dashboard_package",
+      "dashboard_package_browserslist",
+      "dashboard_package_browserslist_development",
+      "dashboard_package_browserslist_production",
+      "dashboard_package_devdependencies",
+      "dashboard_package_devdependencies_tailwindcss",
+      "dashboard_package_devdependencies_types_axios",
+      "dashboard_package_devdependencies_vite",
+      "dashboard_package_devdependencies_vitejs_plugin_react",
+      "dashboard_package_eslintconfig",
+      "dashboard_package_eslintconfig_extends",
+      "dashboard_package_json_ref_0_2",
+      "dashboard_package_json_ref_last_1_chrome_version",
+      "dashboard_package_json_ref_last_1_firefox_version",
+      "dashboard_package_json_ref_last_1_safari_version",
+      "dashboard_package_json_ref_not_dead",
+      "dashboard_package_json_ref_not_op_mini_all",
+      "dashboard_package_json_ref_react_app",
+      "dashboard_package_json_ref_react_app_jest",
+      "dashboard_package_json_vite",
+      "dashboard_package_json_vitejs_plugin_react",
+      "dashboard_package_name",
+      "dashboard_package_private",
+      "dashboard_package_scripts",
+      "dashboard_package_scripts_build",
+      "dashboard_package_scripts_start",
+      "dashboard_package_version",
+      "tailwindcss",
+      "types_axios"
+    ],
+    "15": [
+      "bootstrap",
+      "fortawesome_free_brands_svg_icons",
+      "install",
+      "js_cookie",
+      "npm",
+      "website_package_dependencies",
+      "website_package_dependencies_aos",
+      "website_package_dependencies_bootstrap",
+      "website_package_dependencies_driver_js",
+      "website_package_dependencies_fortawesome_free_brands_svg_icons",
+      "website_package_dependencies_fortawesome_free_solid_svg_icons",
+      "website_package_dependencies_install",
+      "website_package_dependencies_js_cookie",
+      "website_package_dependencies_nodemailer",
+      "website_package_dependencies_npm",
+      "website_package_dependencies_react",
+      "website_package_dependencies_react_icons",
+      "website_package_dependencies_react_redux",
+      "website_package_dependencies_web_vitals",
+      "website_package_json_aos",
+      "website_package_json_driver_js",
+      "website_package_json_fortawesome_free_solid_svg_icons",
+      "website_package_json_nodemailer",
+      "website_package_json_react",
+      "website_package_json_react_icons",
+      "website_package_json_react_redux",
+      "website_package_json_web_vitals"
+    ],
+    "16": [
+      "website_src_components_blog_blogcomment",
+      "website_src_components_blog_blogcomment_blogcomment",
+      "website_src_components_blog_blogdetails",
+      "website_src_components_blog_blogdetails_blogdetails",
+      "website_src_components_booking_bookinginvoice_bookinginvoice",
+      "website_src_components_booking_bookinginvoice_bookinginvoice_bookinginvoice",
+      "website_src_components_booking_bookingsuccess",
+      "website_src_components_booking_bookingsuccess_bookingsuccess",
+      "website_src_components_contact_contact",
+      "website_src_components_contact_contact_contact",
+      "website_src_components_contact_contactform",
+      "website_src_components_contact_contactform_contactform",
+      "website_src_components_contact_contactinfo",
+      "website_src_components_contact_contactinfo_contactinfo",
+      "website_src_components_service_service",
+      "website_src_components_service_service_service",
+      "website_src_components_shared_footer_footer",
+      "website_src_components_shared_footer_footer_footer",
+      "website_src_components_shared_header_header",
+      "website_src_components_shared_header_header_header",
+      "website_src_components_shared_subheader",
+      "website_src_components_shared_subheader_subheader",
+      "website_src_components_shared_topheader_topheader",
+      "website_src_components_shared_topheader_topheader_topheader",
+      "website_src_components_ui_breadcrumb",
+      "website_src_components_ui_breadcrumb_breadcrumb"
+    ],
+    "17": [
+      "dashboard_src_components_campaign_emailcomp",
+      "dashboard_src_components_campaign_emailcomp_emailcomp",
+      "dashboard_src_components_modals_addcampagnmodal",
+      "dashboard_src_components_modals_addcampagnmodal_campaignmodal",
+      "dashboard_src_components_modals_addeditservicemodal",
+      "dashboard_src_components_modals_addeditservicemodal_addeditservicemodal",
+      "dashboard_src_components_notifications_loader",
+      "dashboard_src_components_notifications_loader_loader",
+      "dashboard_src_components_tables_invoicetable_invoicetable",
+      "dashboard_src_components_tables_servicetable_servicetable",
+      "dashboard_src_layout_index",
+      "dashboard_src_layout_index_index",
+      "dashboard_src_screens_campaings",
+      "dashboard_src_screens_campaings_campaigns",
+      "dashboard_src_screens_contactselectiondialog",
+      "dashboard_src_screens_contactselectiondialog_contactselectiondialog",
+      "dashboard_src_screens_invoices_invoices",
+      "dashboard_src_screens_invoices_invoices_invoices",
+      "dashboard_src_screens_payments_payments",
+      "dashboard_src_screens_payments_payments_payments",
+      "dashboard_src_screens_services",
+      "dashboard_src_screens_services_services",
+      "dashboard_src_screens_users_users",
+      "dashboard_src_screens_users_users_users"
+    ],
+    "18": [
+      "dashboard_src_components_datas",
+      "dashboard_src_components_datas_appointmentsdata",
+      "dashboard_src_components_datas_campaigndata",
+      "dashboard_src_components_datas_campaigndata1",
+      "dashboard_src_components_datas_dashboardcards",
+      "dashboard_src_components_datas_doctorsdata",
+      "dashboard_src_components_datas_doctortab",
+      "dashboard_src_components_datas_medicalrecoddata",
+      "dashboard_src_components_datas_medicinedata",
+      "dashboard_src_components_datas_memberdata",
+      "dashboard_src_components_datas_notificationsdata",
+      "dashboard_src_components_datas_transactiondata",
+      "dashboard_src_components_modals_medicinedosage",
+      "dashboard_src_components_modals_medicinedosage_medicinedosagemodal",
+      "dashboard_src_components_uploader",
+      "dashboard_src_components_uploader_uploader",
+      "dashboard_src_components_usedcomp_paymentused",
+      "dashboard_src_components_usedcomp_paymentused_paymentsused",
+      "dashboard_src_screens_doctors_doctorinfo",
+      "dashboard_src_screens_doctors_doctorinfo_doctorinfo",
+      "dashboard_src_screens_doctors_doctorprofile",
+      "dashboard_src_screens_doctors_doctorprofile_doctorprofile",
+      "dashboard_src_screens_patients_newmedicalrecode",
+      "dashboard_src_screens_patients_newmedicalrecode_newmedicalrecord"
+    ],
+    "19": [
+      "dashboard_src_components_datas_invoicesdata",
+      "dashboard_src_components_modals_paymentmodal",
+      "dashboard_src_components_modals_paymentmodal_paymentmodal",
+      "dashboard_src_components_modals_sharemodal",
+      "dashboard_src_components_modals_sharemodal_sharedata",
+      "dashboard_src_components_modals_sharemodal_sharemodal",
+      "dashboard_src_components_senderrecevercomp",
+      "dashboard_src_components_senderrecevercomp_senderrecevercomp",
+      "dashboard_src_components_tables_invoiceproductstable",
+      "dashboard_src_components_tables_invoiceproductstable_invoiceproductstable",
+      "dashboard_src_screens_invoices_createinvoice",
+      "dashboard_src_screens_invoices_createinvoice_createinvoice",
+      "dashboard_src_screens_invoices_previewinvoice",
+      "dashboard_src_screens_invoices_previewinvoice_previewinvoice",
+      "dashboard_src_screens_invoices_usecreateinvoice",
+      "dashboard_src_screens_invoices_usecreateinvoice_usecreateinvoice",
+      "dashboard_src_screens_invoices_usepreviewinvoice",
+      "dashboard_src_screens_invoices_usepreviewinvoice_usepreviewinvoice",
+      "dashboard_src_screens_payments_editpayment",
+      "dashboard_src_screens_payments_editpayment_editpayment",
+      "dashboard_src_screens_payments_previewpayment",
+      "dashboard_src_screens_payments_previewpayment_previewpayment"
+    ],
+    "20": [
+      "dashboard_src_components_modals_fetchmodel",
+      "dashboard_src_components_modals_modal",
+      "dashboard_src_components_modals_modal_modal",
+      "dashboard_src_hooks_usedebounce",
+      "dashboard_src_hooks_usedebounce_usedebounce",
+      "dashboard_src_screens_patients_editmedicalrecordmodal",
+      "dashboard_src_screens_patients_editmedicalrecordmodal_editmedicalrecordmodal",
+      "dashboard_src_screens_patients_editpatient",
+      "dashboard_src_screens_patients_editpatient_addeditpatientmodal",
+      "dashboard_src_screens_patients_patientfilters",
+      "dashboard_src_screens_patients_patientfilters_patientfilters",
+      "dashboard_src_screens_patients_patients",
+      "dashboard_src_screens_patients_patients_patients",
+      "dashboard_src_screens_patients_usepatients",
+      "dashboard_src_screens_patients_usepatients_usepatients",
+      "dashboard_src_screens_schedule_addappointmentmodal",
+      "dashboard_src_screens_schedule_addappointmentmodal_addappointmentmodal",
+      "dashboard_src_screens_schedule_schdulemodel",
+      "dashboard_src_screens_schedule_schdulemodel_addappointmentmodal",
+      "dashboard_src_screens_schedule_schedule",
+      "dashboard_src_screens_schedule_schedule_customtoolbar",
+      "dashboard_src_screens_schedule_schedule_schedule"
+    ],
+    "21": [
+      "dashboard_src_components_tables",
+      "dashboard_src_components_tables_invoicepaidtable",
+      "dashboard_src_components_tables_invoicepaidtable_invoicepaidtable",
+      "dashboard_src_components_tables_invoiceusedtable",
+      "dashboard_src_components_tables_invoiceusedtable_invoiceusedtable",
+      "dashboard_src_components_tables_medicinedosagetable",
+      "dashboard_src_components_tables_medicinedosagetable_medicinedosagetable",
+      "dashboard_src_components_tables_medicinetable",
+      "dashboard_src_components_tables_medicinetable_medicinetable",
+      "dashboard_src_components_tables_patienttable_patienttable",
+      "dashboard_src_components_tables_patienttablearray",
+      "dashboard_src_components_tables_patienttablearray_patienttablearray",
+      "dashboard_src_components_tables_paymenttable",
+      "dashboard_src_components_tables_paymenttable_paymenttable",
+      "dashboard_src_components_tables_transactionrow",
+      "dashboard_src_components_tables_transactionrow_transactionrow",
+      "dashboard_src_components_tables_transactiontable",
+      "dashboard_src_components_tables_transactiontable_transactiontable",
+      "dashboard_src_components_tables_transactiontables",
+      "dashboard_src_components_tables_transactiontables_transactiontables",
+      "dashboard_src_components_usedcomp_patientsused",
+      "dashboard_src_components_usedcomp_patientsused_patientsused"
+    ],
+    "22": [
+      "website_src_components_admin_adminlayout_adminlayout",
+      "website_src_components_admin_adminlayout_adminlayout_adminlayout",
+      "website_src_components_admin_appointments_appointments",
+      "website_src_components_admin_appointments_appointments_adminappointments",
+      "website_src_components_admin_dashboard_dashboard",
+      "website_src_components_admin_dashboard_dashboard_admindashboard",
+      "website_src_components_admin_doctors_doctors",
+      "website_src_components_admin_doctors_doctors_doctors",
+      "website_src_components_admin_patients_patients",
+      "website_src_components_admin_patients_patients_patients",
+      "website_src_components_admin_profile_profile",
+      "website_src_components_admin_profile_profile_profile",
+      "website_src_components_admin_reviews_reviews",
+      "website_src_components_admin_reviews_reviews_adminreviews",
+      "website_src_components_admin_specialites_specialites",
+      "website_src_components_admin_specialites_specialites_specialites",
+      "website_src_components_admin_transactions_transactions",
+      "website_src_components_admin_transactions_transactions_transactions",
+      "website_src_components_ui_adminheader",
+      "website_src_components_ui_adminheader_adminheader",
+      "website_src_components_ui_adminsidebar",
+      "website_src_components_ui_adminsidebar_adminsidebar"
+    ],
+    "23": [
+      "dashboard_src_components_datas_patienttab",
+      "dashboard_src_components_usedcomp_invoiceused",
+      "dashboard_src_components_usedcomp_invoiceused_invoiceused",
+      "dashboard_src_components_usedcomp_patientappointment",
+      "dashboard_src_components_usedcomp_patientappointment_patientappointment",
+      "dashboard_src_screens_patients_dentalchart",
+      "dashboard_src_screens_patients_dentalchart_dentalchart",
+      "dashboard_src_screens_patients_dentalcharttable",
+      "dashboard_src_screens_patients_dentalcharttable_dentalcharttable",
+      "dashboard_src_screens_patients_otpverificationmodal",
+      "dashboard_src_screens_patients_otpverificationmodal_otpverificationmodal",
+      "dashboard_src_screens_patients_patientimages",
+      "dashboard_src_screens_patients_patientimages_patientimages",
+      "dashboard_src_screens_patients_patientprofile",
+      "dashboard_src_screens_patients_patientprofile_patientprofile",
+      "dashboard_src_screens_patients_patientprofilesidebar",
+      "dashboard_src_screens_patients_patientprofilesidebar_patientprofilesidebar",
+      "dashboard_src_screens_patients_patienttabpanel",
+      "dashboard_src_screens_patients_patienttabpanel_patienttabpanel",
+      "dashboard_src_screens_patients_usepatientprofile",
+      "dashboard_src_screens_patients_usepatientprofile_usepatientprofile"
+    ],
+    "24": [
+      "website_src_components_about_aboutblogs",
+      "website_src_components_about_aboutblogs_aboutblogs",
+      "website_src_components_blog_blog",
+      "website_src_components_blog_blog_blog",
+      "website_src_components_blog_blogaside",
+      "website_src_components_blog_blogaside_blogaside",
+      "website_src_components_blog_blogaside_categories",
+      "website_src_components_doctor_blogs_blogs",
+      "website_src_components_doctor_blogs_blogs_blogs",
+      "website_src_components_home_blog_blog",
+      "website_src_components_home_blog_blog_blog",
+      "website_src_components_home_blog_blog_mockblogs",
+      "website_src_components_home_testimonial_testimonial",
+      "website_src_components_home_testimonial_testimonial_mockreviews",
+      "website_src_components_home_testimonial_testimonial_testimonial",
+      "website_src_redux_api_blogapi",
+      "website_src_redux_api_blogapi_blogapi",
+      "website_src_redux_hooks",
+      "website_src_redux_hooks_usedebounced",
+      "website_src_utils_truncate",
+      "website_src_utils_truncate_truncate"
+    ],
+    "25": [
+      "backend_controllers_schdule_schdule",
+      "backend_controllers_schdule_schdule_createschedule",
+      "backend_controllers_schdule_schdule_deletepastschedules",
+      "backend_controllers_schdule_schdule_deleteschedule",
+      "backend_controllers_schdule_schdule_getallschedules",
+      "backend_controllers_slotcontroller",
+      "backend_controllers_slotcontroller_buildslots",
+      "backend_controllers_slotcontroller_deletepastslots",
+      "backend_controllers_slotcontroller_deleteslot",
+      "backend_controllers_slotcontroller_generateslotsforrange",
+      "backend_controllers_slotcontroller_generateslotshandler",
+      "backend_controllers_slotcontroller_getallslots",
+      "backend_models_schdule_schdule",
+      "backend_models_slot_slot",
+      "backend_models_slot_slot_timeslot",
+      "backend_models_slot_slot_timeslotschema",
+      "backend_routes_schdule",
+      "backend_routes_schdule_router",
+      "backend_routes_slotroutes",
+      "backend_routes_slotroutes_router"
+    ],
+    "26": [
+      "dashboard_src_api_api",
+      "dashboard_src_api_api_fetchmonthlyearnings",
+      "dashboard_src_api_api_fetchrecentpatients",
+      "dashboard_src_api_api_fetchtotalearnings",
+      "dashboard_src_api_api_fetchtotalpatientcount",
+      "dashboard_src_api_api_fetchtotalwebpatientcount",
+      "dashboard_src_api_api_fetchwebpatienttodayappointments",
+      "dashboard_src_api_api_fetchwebsitepatient",
+      "dashboard_src_components_charts",
+      "dashboard_src_components_charts_dashboardbigchart",
+      "dashboard_src_components_dashboard_dashboardcard",
+      "dashboard_src_components_dashboard_dashboardcard_dashboardcard",
+      "dashboard_src_components_dashboard_recentpatientslist",
+      "dashboard_src_components_dashboard_recentpatientslist_recentpatientslist",
+      "dashboard_src_components_dashboard_todayappointmentslist",
+      "dashboard_src_components_dashboard_todayappointmentslist_todayappointmentslist",
+      "dashboard_src_hooks_usedashboarddata",
+      "dashboard_src_hooks_usedashboarddata_usedashboarddata",
+      "dashboard_src_screens_dashboard",
+      "dashboard_src_screens_dashboard_dashboard"
+    ],
+    "27": [
+      "website_src_components_privateroute_privateroute",
+      "website_src_components_privateroute_privateroute_privateroute",
+      "website_src_constant_storagekey",
+      "website_src_helpers_axios_axiosbasequery",
+      "website_src_helpers_axios_axiosbasequery_axiosbasequery",
+      "website_src_helpers_axios_axiosinstance",
+      "website_src_helpers_axios_axiosinstance_instance",
+      "website_src_service_auth_service",
+      "website_src_service_auth_service_getuserinfo",
+      "website_src_service_auth_service_isloggedin",
+      "website_src_service_auth_service_loggedout",
+      "website_src_service_auth_service_setuserinfo",
+      "website_src_utils_jwt",
+      "website_src_utils_jwt_decodetoken",
+      "website_src_utils_local_storage",
+      "website_src_utils_local_storage_getfromlocalstorage",
+      "website_src_utils_local_storage_setlocalstorage",
+      "website_src_utils_local_storage_setuserinfo"
+    ],
+    "28": [
+      "dashboard_src_components_drivertour",
+      "dashboard_src_components_drivertour_drivertour",
+      "dashboard_src_components_drivertourprovider",
+      "dashboard_src_components_drivertourprovider_tourcontext",
+      "dashboard_src_components_drivertourprovider_tourprovider",
+      "dashboard_src_components_notificationcomp",
+      "dashboard_src_components_notificationcomp_notificationcomp",
+      "dashboard_src_constants_toursteps",
+      "dashboard_src_constants_toursteps_tour_steps",
+      "dashboard_src_hooks_usedrivertour",
+      "dashboard_src_hooks_usedrivertour_usedrivertour",
+      "dashboard_src_layout_header",
+      "dashboard_src_layout_header_header",
+      "dashboard_src_layout_pageguidebutton",
+      "dashboard_src_layout_pageguidebutton_pageguidebutton",
+      "dashboard_src_layout_usermenu",
+      "dashboard_src_layout_usermenu_usermenu"
+    ],
+    "29": [
+      "backend_package",
+      "backend_package_author",
+      "backend_package_description",
+      "backend_package_devdependencies",
+      "backend_package_devdependencies_types_nodemailer",
+      "backend_package_keywords",
+      "backend_package_license",
+      "backend_package_main",
+      "backend_package_name",
+      "backend_package_scripts",
+      "backend_package_scripts_build",
+      "backend_package_scripts_start",
+      "backend_package_type",
+      "backend_package_version",
+      "types_nodemailer"
+    ],
+    "30": [
+      "apexcharts",
+      "dashboard_package_dependencies",
+      "dashboard_package_dependencies_apexcharts",
+      "dashboard_package_dependencies_fortawesome_free_solid_svg_icons",
+      "dashboard_package_dependencies_html2canvas",
+      "dashboard_package_dependencies_material_tailwind_react",
+      "dashboard_package_dependencies_react_datepicker",
+      "dashboard_package_dependencies_react_datetime_picker",
+      "dashboard_package_dependencies_recharts",
+      "dashboard_package_json_fortawesome_free_solid_svg_icons",
+      "html2canvas",
+      "material_tailwind_react",
+      "react_datepicker",
+      "recharts"
+    ],
+    "31": [
+      "website_package",
+      "website_package_devdependencies",
+      "website_package_devdependencies_vite",
+      "website_package_devdependencies_vitejs_plugin_react",
+      "website_package_engines",
+      "website_package_engines_node",
+      "website_package_json_vite",
+      "website_package_json_vitejs_plugin_react",
+      "website_package_name",
+      "website_package_private",
+      "website_package_scripts",
+      "website_package_scripts_build",
+      "website_package_scripts_start",
+      "website_package_version"
+    ],
+    "32": [
+      "agenda",
+      "backend_package_dependencies",
+      "backend_package_dependencies_agenda",
+      "backend_package_dependencies_axios",
+      "backend_package_dependencies_cookie_parser",
+      "backend_package_dependencies_cors",
+      "backend_package_dependencies_node_cron",
+      "backend_package_dependencies_twilio",
+      "backend_package_json_axios",
+      "backend_package_json_node_cron",
+      "cookie_parser",
+      "cors",
+      "twilio"
+    ],
+    "33": [
+      "dashboard_src_app_privateroute",
+      "dashboard_src_authcontext",
+      "dashboard_src_authcontext_authcontext",
+      "dashboard_src_authcontext_authprovider",
+      "dashboard_src_authcontext_istokenvalid",
+      "dashboard_src_authcontext_useauth",
+      "dashboard_src_components_usedcomp_changepassword",
+      "dashboard_src_components_usedcomp_changepassword_changepassword",
+      "dashboard_src_privateroute",
+      "dashboard_src_privateroute_privateroute",
+      "dashboard_src_screens_login_login",
+      "dashboard_src_screens_settings",
+      "dashboard_src_screens_settings_settings"
+    ],
+    "34": [
+      "dashboard_src_screens_users_api",
+      "dashboard_src_screens_users_api_getappointmentdata",
+      "dashboard_src_screens_users_api_getservices",
+      "dashboard_src_screens_users_appointmentdetailsfields",
+      "dashboard_src_screens_users_appointmentdetailsfields_appointmentdetailsfields",
+      "dashboard_src_screens_users_patientinfofields",
+      "dashboard_src_screens_users_patientinfofields_patientinfofields",
+      "dashboard_src_screens_users_styles",
+      "dashboard_src_screens_users_styles_inputsx",
+      "dashboard_src_screens_users_userappointmentmodal",
+      "dashboard_src_screens_users_userappointmentmodal_userappointmentmodal",
+      "dashboard_src_screens_users_useuserappointmentmodal",
+      "dashboard_src_screens_users_useuserappointmentmodal_useuserappointmentmodal"
+    ],
+    "35": [
+      "website_src_components_doctor_doctorprofile_availibility",
+      "website_src_components_doctor_doctorprofile_availibility_availibility",
+      "website_src_components_doctor_doctorprofile_doctorprofile",
+      "website_src_components_doctor_doctorprofile_doctorprofile_doctorprofile",
+      "website_src_components_doctor_doctorprofile_location",
+      "website_src_components_doctor_doctorprofile_location_location",
+      "website_src_components_doctor_doctorprofile_overview",
+      "website_src_components_doctor_doctorprofile_overview_overview",
+      "website_src_components_doctor_doctorprofile_review",
+      "website_src_components_doctor_doctorprofile_review_desc",
+      "website_src_components_doctor_doctorprofile_review_review",
+      "website_src_components_doctor_doctorprofile_timelinesection",
+      "website_src_components_doctor_doctorprofile_timelinesection_timelinesection"
+    ],
+    "36": [
+      "website_src_components_home_availablefeatures_available",
+      "website_src_components_home_availablefeatures_available_availabe",
+      "website_src_components_home_availablefeatures_availableservicecontent",
+      "website_src_components_home_availablefeatures_availableservicecontent_availableservicecontent",
+      "website_src_components_trackappointment_appointmenttimeline",
+      "website_src_components_trackappointment_appointmenttimeline_appointmenttimeline",
+      "website_src_components_trackappointment_trackappointment",
+      "website_src_components_trackappointment_trackappointment_trackappointment",
+      "website_src_components_trackappointment_trackdetailpage",
+      "website_src_components_trackappointment_trackdetailpage_trackdetailpage",
+      "website_src_constant_appointmentstatus",
+      "website_src_constant_appointmentstatus_appointmentstatusoption",
+      "website_src_constant_appointmentstatus_appointstatusdsc"
+    ],
+    "37": [
+      "website_src_components_home_clinicandspecialities_clinicandspecialities",
+      "website_src_components_home_clinicandspecialities_clinicandspecialities_clinicandspecialities",
+      "website_src_components_home_gallery_gallery",
+      "website_src_components_home_gallery_gallery_gallery",
+      "website_src_components_home_gallery_gallery_imagestyle",
+      "website_src_components_home_herosection_herosection",
+      "website_src_components_home_herosection_herosection_herosection",
+      "website_src_components_home_home_home",
+      "website_src_components_home_home_home_home",
+      "website_src_components_home_infopage_infopage",
+      "website_src_components_home_infopage_infopage_infopage",
+      "website_src_components_home_services_service",
+      "website_src_components_home_services_service_service"
+    ],
+    "38": [
+      "backend_controllers_appointmentcontroller_appointmentcontroller",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_createappointment",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_deleteappointment",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_getallappointments",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_getappointmentbyid",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_getappointmentsbypatientid",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_getappointmentsfortoday",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_gettotalappointmentcount",
+      "backend_controllers_appointmentcontroller_appointmentcontroller_updateappointment",
+      "backend_models_appointment_appoinmentmodel",
+      "backend_models_appointment_appoinmentmodel_appointment",
+      "backend_models_appointment_appoinmentmodel_appointmentschema"
+    ],
+    "39": [
+      "backend_controllers_emailcampaigncontroller",
+      "backend_controllers_emailcampaigncontroller_createemailcampaign",
+      "backend_controllers_emailcampaigncontroller_deleteemailcampaign",
+      "backend_controllers_emailcampaigncontroller_getemailcampaignbyid",
+      "backend_controllers_emailcampaigncontroller_getemailcampaigns",
+      "backend_controllers_emailcampaigncontroller_updateemailcampaign",
+      "backend_models_emailcampaign",
+      "backend_models_emailcampaign_emailcampaignschema",
+      "backend_routes_emailcampaignroutes",
+      "backend_routes_emailcampaignroutes_router",
+      "backend_routes_emailcampaignroutes_storage",
+      "backend_routes_emailcampaignroutes_upload"
+    ],
+    "40": [
+      "dashboard_src_components_appointments_customevent",
+      "dashboard_src_components_appointments_customevent_customevent",
+      "dashboard_src_components_appointments_customtoolbar",
+      "dashboard_src_components_appointments_customtoolbar_customtoolbar",
+      "dashboard_src_hooks_useappointments",
+      "dashboard_src_hooks_useappointments_useappointments",
+      "dashboard_src_screens_appointmentdetailmodel",
+      "dashboard_src_screens_appointmentdetailmodel_appointmentdetailsmodal",
+      "dashboard_src_screens_appointments",
+      "dashboard_src_screens_appointments_appointments",
+      "dashboard_src_screens_modals",
+      "dashboard_src_screens_modals_modal"
+    ],
+    "41": [
+      "dashboard_src_screens_history_archivedpatientrow",
+      "dashboard_src_screens_history_archivedpatientrow_archivedpatientrow",
+      "dashboard_src_screens_history_archivedpatients",
+      "dashboard_src_screens_history_archivedpatients_archivedpatients",
+      "dashboard_src_screens_history_archivedpatientsheader",
+      "dashboard_src_screens_history_archivedpatientsheader_archivedpatientsheader",
+      "dashboard_src_screens_history_archivedpatientssearch",
+      "dashboard_src_screens_history_archivedpatientssearch_archivedpatientssearch",
+      "dashboard_src_screens_history_archivedpatientsstats",
+      "dashboard_src_screens_history_archivedpatientsstats_archivedpatientsstats",
+      "dashboard_src_screens_history_usearchivedpatients",
+      "dashboard_src_screens_history_usearchivedpatients_usearchivedpatients"
+    ],
+    "42": [
+      "backend_controllers_services_services",
+      "backend_controllers_services_services_createservice",
+      "backend_controllers_services_services_deleteservice",
+      "backend_controllers_services_services_getallservices",
+      "backend_controllers_services_services_getservicebyid",
+      "backend_controllers_services_services_updateservice",
+      "backend_models_services_service",
+      "backend_models_services_service_service",
+      "backend_models_services_service_serviceschema",
+      "backend_routes_services",
+      "backend_routes_services_router"
+    ],
+    "43": [
+      "website_package_eslintconfig",
+      "website_package_eslintconfig_extends",
+      "website_package_eslintconfig_rules",
+      "website_package_json_ref_react_app",
+      "website_package_json_ref_react_app_jest",
+      "website_package_rules_jsx_a11y_anchor_is_valid",
+      "website_package_rules_jsx_a11y_img_redundant_alt",
+      "website_package_rules_no_empty_pattern",
+      "website_package_rules_no_sparse_arrays",
+      "website_package_rules_no_unused_vars",
+      "website_package_rules_react_hooks_exhaustive_deps"
+    ],
+    "44": [
+      "backend_controllers_dentalchartcontroller",
+      "backend_controllers_dentalchartcontroller_create",
+      "backend_controllers_dentalchartcontroller_getbypatientid",
+      "backend_controllers_dentalchartcontroller_list",
+      "backend_controllers_dentalchartcontroller_remove",
+      "backend_models_dentalchart",
+      "backend_models_dentalchart_dentalchart",
+      "backend_models_dentalchart_dentalchartschema",
+      "backend_routes_dentalchartroutes",
+      "backend_routes_dentalchartroutes_router"
+    ],
+    "45": [
+      "backend_controllers_doctor_doctor",
+      "backend_controllers_doctor_doctor_createdoctor",
+      "backend_controllers_doctor_doctor_deletedoctor",
+      "backend_controllers_doctor_doctor_dirname",
+      "backend_controllers_doctor_doctor_getalldoctors",
+      "backend_controllers_doctor_doctor_getdoctorbyid",
+      "backend_controllers_doctor_doctor_updatedoctor",
+      "backend_models_doctor_doctor",
+      "backend_models_doctor_doctor_doctor",
+      "backend_models_doctor_doctor_doctorschema"
+    ],
+    "46": [
+      "backend_controllers_payment_payment",
+      "backend_controllers_payment_payment_createpayment",
+      "backend_controllers_payment_payment_deletepayment",
+      "backend_controllers_payment_payment_getallpayments",
+      "backend_controllers_payment_payment_getpaymentbyid",
+      "backend_controllers_payment_payment_stripe",
+      "backend_controllers_payment_payment_updatepayment",
+      "backend_models_payment_paymentmodel",
+      "backend_models_payment_paymentmodel_payment",
+      "backend_models_payment_paymentmodel_paymentschema"
+    ],
+    "47": [
+      "backend_controllers_webappoinment",
+      "backend_controllers_webappoinment_createwebappointmentbyunauthenticateduser",
+      "backend_controllers_webappoinment_deletewebappointment",
+      "backend_controllers_webappoinment_getwebappointment",
+      "backend_controllers_webappoinment_getwebappointments",
+      "backend_models_webappoint",
+      "backend_models_webappoint_webappointment",
+      "backend_models_webappoint_webappointmentschema",
+      "backend_routes_webapoint",
+      "backend_routes_webapoint_router"
+    ],
+    "48": [
+      "backend_controllers_flieshare_fileshare",
+      "backend_controllers_flieshare_fileshare_sendemail",
+      "backend_controllers_flieshare_fileshare_sendwhatsappmessage",
+      "backend_controllers_flieshare_fileshare_shareviaemail",
+      "backend_controllers_flieshare_fileshare_shareviawhatsapp",
+      "backend_controllers_flieshare_fileshare_uploadfile",
+      "backend_routes_fileroutes",
+      "backend_routes_fileroutes_router",
+      "backend_routes_fileroutes_upload"
+    ],
+    "49": [
+      "website_package_browserslist",
+      "website_package_browserslist_development",
+      "website_package_browserslist_production",
+      "website_package_json_ref_0_2",
+      "website_package_json_ref_last_1_chrome_version",
+      "website_package_json_ref_last_1_firefox_version",
+      "website_package_json_ref_last_1_safari_version",
+      "website_package_json_ref_not_dead",
+      "website_package_json_ref_not_op_mini_all"
+    ],
+    "50": [
+      "website_src_components_doctor_prescription_prescriptiondetails",
+      "website_src_components_doctor_prescription_prescriptiondetails_prescriptiondetails",
+      "website_src_components_doctor_prescription_prescriptionheader",
+      "website_src_components_doctor_prescription_prescriptionheader_prescriptionheader",
+      "website_src_components_doctor_prescription_prescriptionview",
+      "website_src_components_doctor_prescription_prescriptionview_columns",
+      "website_src_components_doctor_prescription_prescriptionview_prescriptionview",
+      "website_src_components_doctor_prescription_rxsection",
+      "website_src_components_doctor_prescription_rxsection_rxsection"
+    ],
+    "51": [
+      "dashboard_public_manifest",
+      "dashboard_public_manifest_background_color",
+      "dashboard_public_manifest_display",
+      "dashboard_public_manifest_icons",
+      "dashboard_public_manifest_name",
+      "dashboard_public_manifest_short_name",
+      "dashboard_public_manifest_start_url",
+      "dashboard_public_manifest_theme_color"
+    ],
+    "52": [
+      "dashboard_src_components_datas_receptionsdata",
+      "dashboard_src_components_modals_adddoctormodal",
+      "dashboard_src_components_modals_adddoctormodal_adddoctormodal",
+      "dashboard_src_components_tables_doctorstable_doctorstable",
+      "dashboard_src_screens_doctors_doctors",
+      "dashboard_src_screens_doctors_doctors_doctors",
+      "dashboard_src_screens_receptions",
+      "dashboard_src_screens_receptions_receptions"
+    ],
+    "53": [
+      "website_public_manifest",
+      "website_public_manifest_background_color",
+      "website_public_manifest_display",
+      "website_public_manifest_icons",
+      "website_public_manifest_name",
+      "website_public_manifest_short_name",
+      "website_public_manifest_start_url",
+      "website_public_manifest_theme_color"
+    ],
+    "54": [
+      "website_src_components_about_about",
+      "website_src_components_about_about_about",
+      "website_src_components_about_aboutachievements",
+      "website_src_components_about_aboutachievements_aboutachievements",
+      "website_src_components_about_aboutawards",
+      "website_src_components_about_aboutawards_aboutawards",
+      "website_src_components_about_aboutspecialists",
+      "website_src_components_about_aboutspecialists_aboutspecialists"
+    ],
+    "55": [
+      "backend_controllers_sendgridcontroller_js_sendgridcontroller",
+      "backend_controllers_sendgridcontroller_js_sendgridcontroller_sendconfirmationemail",
+      "backend_models_sendgridactivitymodel",
+      "backend_models_sendgridactivitymodel_sendgridactivity",
+      "backend_models_sendgridactivitymodel_sendgridactivityschema",
+      "backend_routes_sendgridroutes",
+      "backend_routes_sendgridroutes_router"
+    ],
+    "56": [
+      "dashboard_src_components_datas_menudatas",
+      "dashboard_src_components_drawer_maindrawer",
+      "dashboard_src_components_drawer_maindrawer_maindrawer",
+      "dashboard_src_components_drawer_menudrawer",
+      "dashboard_src_components_drawer_menudrawer_menudrawer",
+      "dashboard_src_layout_sidebar",
+      "dashboard_src_layout_sidebar_sidebar"
+    ],
+    "57": [
+      "backend_controllers_confirmemail",
+      "backend_controllers_confirmemail_sendappointmentconfirmationemail",
+      "backend_controllers_confirmemail_senddoctorappointmentemail",
+      "backend_controllers_confirmemail_transporter",
+      "backend_routes_confirmemail",
+      "backend_routes_confirmemail_router"
+    ],
+    "58": [
+      "backend_controllers_dashotp",
+      "backend_controllers_dashotp_otpstore",
+      "backend_controllers_dashotp_sendotp",
+      "backend_controllers_dashotp_verifyotp",
+      "backend_routes_dashotproutes",
+      "backend_routes_dashotproutes_router"
+    ],
+    "59": [
+      "backend_controllers_otp_otp",
+      "backend_controllers_otp_otp_generateotp",
+      "backend_controllers_otp_otp_sendotp",
+      "backend_controllers_otp_otp_verifyotp",
+      "backend_routes_opt",
+      "backend_routes_opt_router"
+    ],
+    "60": [
+      "dashboard_src_app_app",
+      "dashboard_src_app_test",
+      "dashboard_src_index",
+      "dashboard_src_index_root",
+      "dashboard_src_reportwebvitals",
+      "dashboard_src_reportwebvitals_reportwebvitals"
+    ],
+    "61": [
+      "website_src_components_doctor_searchdoctor_searchcontent",
+      "website_src_components_doctor_searchdoctor_searchcontent_searchcontent",
+      "website_src_components_doctor_searchdoctor_searchdoctor",
+      "website_src_components_doctor_searchdoctor_searchdoctor_searchdoctor",
+      "website_src_utils_hooks_usedebounced",
+      "website_src_utils_hooks_usedebounced_usedebounced"
+    ],
+    "62": [
+      "backend_controllers_appointmentmail",
+      "backend_controllers_appointmentmail_sendappointmentconfirmationemail",
+      "backend_controllers_appointmentmail_transporter",
+      "backend_routes_appointmentmail",
+      "backend_routes_appointmentmail_router"
+    ],
+    "63": [
+      "dashboard_src_components_notifications_errors",
+      "dashboard_src_components_notifications_errors_copy",
+      "dashboard_src_components_notifications_errors_empty",
+      "dashboard_src_components_notifications_errors_error",
+      "dashboard_src_components_notifications_errors_inlineerror"
+    ],
+    "64": [
+      "dashboard_src_screens_schedule_schduleform",
+      "dashboard_src_screens_schedule_schduleform_button",
+      "dashboard_src_screens_schedule_schduleform_datepickercomp",
+      "dashboard_src_screens_schedule_schduleform_fromtodate",
+      "dashboard_src_screens_schedule_schduleform_timepickercomp"
+    ],
+    "65": [
+      "backend_controllers_googleauth",
+      "backend_controllers_googleauth_googleauth",
+      "backend_controllers_googleauth_googleauthcallback",
+      "backend_controllers_googleauth_logout"
+    ],
+    "66": [
+      "backend_controllers_historycontroller_history",
+      "backend_controllers_historycontroller_history_getpatienthistorybyemail",
+      "backend_routes_historyroutes",
+      "backend_routes_historyroutes_router"
+    ],
+    "67": [
+      "backend_googleoauth",
+      "backend_models_google",
+      "backend_models_google_userdb",
+      "backend_models_google_userschema"
+    ],
+    "68": [
+      "backend_utils_emailutil",
+      "backend_utils_emailutil_generateotp",
+      "backend_utils_emailutil_sendemail",
+      "backend_utils_emailutil_verifyotp"
+    ],
+    "69": [
+      "backend_controllers_scheduletiming_schedule",
+      "backend_controllers_scheduletiming_schedule_schedulecontroller",
+      "backend_models_scheduletiming_schedule"
+    ],
+    "70": [
+      "backend_middleware",
+      "backend_middleware_app",
+      "backend_middleware_setupmiddleware"
+    ],
+    "71": [
+      "backend_routes_notification",
+      "backend_routes_notification_express",
+      "backend_routes_notification_router"
+    ],
+    "72": [
+      "website_src_components_home_ourdoctor_ourdoctors",
+      "website_src_components_home_ourdoctor_ourdoctors_dummydoctors",
+      "website_src_components_home_ourdoctor_ourdoctors_ourdoctors"
+    ],
+    "73": [
+      "ag_grid_community",
+      "dashboard_package_dependencies_ag_grid_community"
+    ],
+    "74": [
+      "ag_grid_react",
+      "dashboard_package_dependencies_ag_grid_react"
+    ],
+    "75": [
+      "autoprefixer",
+      "dashboard_package_dependencies_autoprefixer"
+    ],
+    "76": [
+      "backend_package_dependencies_body_parser",
+      "body_parser"
+    ],
+    "77": [
+      "backend_package_dependencies_bcryptjs",
+      "bcryptjs"
+    ],
+    "78": [
+      "backend_package_dependencies_dotenv",
+      "backend_package_json_dotenv"
+    ],
+    "79": [
+      "backend_package_dependencies_ejs",
+      "ejs"
+    ],
+    "80": [
+      "backend_package_dependencies_express",
+      "express"
+    ],
+    "81": [
+      "backend_package_dependencies_express_session",
+      "express_session"
+    ],
+    "82": [
+      "backend_package_dependencies_google_auth_library",
+      "google_auth_library"
+    ],
+    "83": [
+      "backend_package_dependencies_helmet",
+      "helmet"
+    ],
+    "84": [
+      "backend_package_dependencies_jsonwebtoken",
+      "backend_package_json_jsonwebtoken"
+    ],
+    "85": [
+      "backend_package_dependencies_moment",
+      "backend_package_json_moment"
+    ],
+    "86": [
+      "backend_package_dependencies_moment_timezone",
+      "backend_package_json_moment_timezone"
+    ],
+    "87": [
+      "backend_package_dependencies_mongoose",
+      "backend_package_json_mongoose"
+    ],
+    "88": [
+      "backend_package_dependencies_multer",
+      "multer"
+    ],
+    "89": [
+      "backend_package_dependencies_nodemailer",
+      "backend_package_json_nodemailer"
+    ],
+    "90": [
+      "backend_package_dependencies_nodemon",
+      "nodemon"
+    ],
+    "91": [
+      "backend_package_dependencies_passport",
+      "passport"
+    ],
+    "92": [
+      "backend_package_dependencies_passport_google_oauth2",
+      "passport_google_oauth2"
+    ],
+    "93": [
+      "backend_package_dependencies_sendgrid_mail",
+      "sendgrid_mail"
+    ],
+    "94": [
+      "backend_package_dependencies_stripe",
+      "stripe"
+    ],
+    "95": [
+      "backend_routes_transporter",
+      "backend_routes_transporter_transporter"
+    ],
+    "96": [
+      "backend_utils_authenticated",
+      "backend_utils_authenticated_authenticatetoken"
+    ],
+    "97": [
+      "clsx",
+      "website_package_dependencies_clsx"
+    ],
+    "98": [
+      "dashboard_package_dependencies_antd",
+      "dashboard_package_json_antd"
+    ],
+    "99": [
+      "dashboard_package_dependencies_aos",
+      "dashboard_package_json_aos"
+    ],
+    "100": [
+      "dashboard_package_dependencies_axios",
+      "dashboard_package_json_axios"
+    ],
+    "101": [
+      "dashboard_package_dependencies_date_fns",
+      "date_fns"
+    ],
+    "102": [
+      "dashboard_package_dependencies_driver_js",
+      "dashboard_package_json_driver_js"
+    ],
+    "103": [
+      "dashboard_package_dependencies_emailjs_com",
+      "emailjs_com"
+    ],
+    "104": [
+      "dashboard_package_dependencies_emotion_react",
+      "emotion_react"
+    ],
+    "105": [
+      "dashboard_package_dependencies_emotion_styled",
+      "emotion_styled"
+    ],
+    "106": [
+      "dashboard_package_dependencies_fortawesome_fontawesome_svg_core",
+      "dashboard_package_json_fortawesome_fontawesome_svg_core"
+    ],
+    "107": [
+      "dashboard_package_dependencies_fortawesome_react_fontawesome",
+      "dashboard_package_json_fortawesome_react_fontawesome"
+    ],
+    "108": [
+      "dashboard_package_dependencies_headlessui_react",
+      "headlessui_react"
+    ],
+    "109": [
+      "dashboard_package_dependencies_hookform_resolvers",
+      "hookform_resolvers"
+    ],
+    "110": [
+      "dashboard_package_dependencies_jspdf_autotable",
+      "jspdf_autotable"
+    ],
+    "111": [
+      "dashboard_package_dependencies_jwt_decode",
+      "dashboard_package_json_jwt_decode"
+    ],
+    "112": [
+      "dashboard_package_dependencies_moment",
+      "dashboard_package_json_moment"
+    ],
+    "113": [
+      "dashboard_package_dependencies_mongoose",
+      "dashboard_package_json_mongoose"
+    ],
+    "114": [
+      "dashboard_package_dependencies_mui_lab",
+      "mui_lab"
+    ],
+    "115": [
+      "dashboard_package_dependencies_mui_material",
+      "mui_material"
+    ],
+    "116": [
+      "dashboard_package_dependencies_mui_x_data_grid",
+      "mui_x_data_grid"
+    ],
+    "117": [
+      "dashboard_package_dependencies_mui_x_date_pickers",
+      "mui_x_date_pickers"
+    ],
+    "118": [
+      "dashboard_package_dependencies_node_cron",
+      "dashboard_package_json_node_cron"
+    ],
+    "119": [
+      "dashboard_package_dependencies_nodemailer",
+      "dashboard_package_json_nodemailer"
+    ],
+    "120": [
+      "dashboard_package_dependencies_postcss",
+      "postcss"
+    ],
+    "121": [
+      "dashboard_package_dependencies_react",
+      "dashboard_package_json_react"
+    ],
+    "122": [
+      "dashboard_package_dependencies_react_apexcharts",
+      "react_apexcharts"
+    ],
+    "123": [
+      "dashboard_package_dependencies_react_big_calendar",
+      "react_big_calendar"
+    ],
+    "124": [
+      "dashboard_package_dependencies_react_bootstrap",
+      "dashboard_package_json_react_bootstrap"
+    ],
+    "125": [
+      "dashboard_package_dependencies_react_copy_to_clipboard",
+      "react_copy_to_clipboard"
+    ],
+    "126": [
+      "dashboard_package_dependencies_react_datetime",
+      "react_datetime"
+    ],
+    "127": [
+      "dashboard_package_dependencies_react_dom",
+      "dashboard_package_json_react_dom"
+    ],
+    "128": [
+      "dashboard_package_dependencies_react_dropzone",
+      "react_dropzone"
+    ],
+    "129": [
+      "dashboard_package_dependencies_react_hook_form",
+      "dashboard_package_json_react_hook_form"
+    ],
+    "130": [
+      "dashboard_package_dependencies_react_hot_toast",
+      "dashboard_package_json_react_hot_toast"
+    ],
+    "131": [
+      "dashboard_package_dependencies_react_icons",
+      "dashboard_package_json_react_icons"
+    ],
+    "132": [
+      "dashboard_package_dependencies_react_image_gallery",
+      "react_image_gallery"
+    ],
+    "133": [
+      "dashboard_package_dependencies_react_modal",
+      "dashboard_package_json_react_modal"
+    ],
+    "134": [
+      "dashboard_package_dependencies_react_modern_drawer",
+      "react_modern_drawer"
+    ],
+    "135": [
+      "dashboard_package_dependencies_react_redux",
+      "dashboard_package_json_react_redux"
+    ],
+    "136": [
+      "dashboard_package_dependencies_react_router_dom",
+      "dashboard_package_json_react_router_dom"
+    ],
+    "137": [
+      "dashboard_package_dependencies_react_select",
+      "react_select"
+    ],
+    "138": [
+      "dashboard_package_dependencies_react_spinners",
+      "react_spinners"
+    ],
+    "139": [
+      "dashboard_package_dependencies_react_table",
+      "react_table"
+    ],
+    "140": [
+      "dashboard_package_dependencies_react_toastify",
+      "dashboard_package_json_react_toastify"
+    ],
+    "141": [
+      "dashboard_package_dependencies_react_tooltip",
+      "react_tooltip"
+    ],
+    "142": [
+      "dashboard_package_dependencies_redux",
+      "redux"
+    ],
+    "143": [
+      "dashboard_package_dependencies_reduxjs_toolkit",
+      "dashboard_package_json_reduxjs_toolkit"
+    ],
+    "144": [
+      "dashboard_package_dependencies_swiper",
+      "dashboard_package_json_swiper"
+    ],
+    "145": [
+      "dashboard_package_dependencies_testing_library_jest_dom",
+      "dashboard_package_json_testing_library_jest_dom"
+    ],
+    "146": [
+      "dashboard_package_dependencies_testing_library_react",
+      "dashboard_package_json_testing_library_react"
+    ],
+    "147": [
+      "dashboard_package_dependencies_testing_library_user_event",
+      "dashboard_package_json_testing_library_user_event"
+    ],
+    "148": [
+      "dashboard_package_dependencies_uuid",
+      "uuid"
+    ],
+    "149": [
+      "dashboard_package_dependencies_web_vitals",
+      "dashboard_package_json_web_vitals"
+    ],
+    "150": [
+      "dashboard_package_dependencies_yup",
+      "yup"
+    ],
+    "151": [
+      "dashboard_redux_hooks",
+      "dashboard_redux_hooks_usedebounced"
+    ],
+    "152": [
+      "dashboard_src_axios_d",
+      "dashboard_src_axios_d_axios"
+    ],
+    "153": [
+      "dashboard_src_screens_patients_webpatinet",
+      "dashboard_src_screens_patients_webpatinet_webpatinet"
+    ],
+    "154": [
+      "dashboard_tailwind_config",
+      "dashboard_tailwind_config_defaulttheme"
+    ],
+    "155": [
+      "files_ui_react",
+      "website_package_dependencies_files_ui_react"
+    ],
+    "156": [
+      "firebase",
+      "website_package_dependencies_firebase"
+    ],
+    "157": [
+      "framer_motion",
+      "website_package_dependencies_framer_motion"
+    ],
+    "158": [
+      "mdb_react_ui_kit",
+      "website_package_dependencies_mdb_react_ui_kit"
+    ],
+    "159": [
+      "react_calendar",
+      "website_package_dependencies_react_calendar"
+    ],
+    "160": [
+      "react_query",
+      "website_package_dependencies_react_query"
+    ],
+    "161": [
+      "react_star_ratings",
+      "website_package_dependencies_react_star_ratings"
+    ],
+    "162": [
+      "react_vertical_timeline_component",
+      "website_package_dependencies_react_vertical_timeline_component"
+    ],
+    "163": [
+      "stripe_stripe_js",
+      "website_package_dependencies_stripe_stripe_js"
+    ],
+    "164": [
+      "styled_components",
+      "website_package_dependencies_styled_components"
+    ],
+    "165": [
+      "sweetalert",
+      "website_package_dependencies_sweetalert"
+    ],
+    "166": [
+      "website_package_dependencies_antd",
+      "website_package_json_antd"
+    ],
+    "167": [
+      "website_package_dependencies_axios",
+      "website_package_json_axios"
+    ],
+    "168": [
+      "website_package_dependencies_dotenv",
+      "website_package_json_dotenv"
+    ],
+    "169": [
+      "website_package_dependencies_fortawesome_fontawesome_svg_core",
+      "website_package_json_fortawesome_fontawesome_svg_core"
+    ],
+    "170": [
+      "website_package_dependencies_fortawesome_react_fontawesome",
+      "website_package_json_fortawesome_react_fontawesome"
+    ],
+    "171": [
+      "website_package_dependencies_jsonwebtoken",
+      "website_package_json_jsonwebtoken"
+    ],
+    "172": [
+      "website_package_dependencies_jwt_decode",
+      "website_package_json_jwt_decode"
+    ],
+    "173": [
+      "website_package_dependencies_moment",
+      "website_package_json_moment"
+    ],
+    "174": [
+      "website_package_dependencies_moment_timezone",
+      "website_package_json_moment_timezone"
+    ],
+    "175": [
+      "website_package_dependencies_react_bootstrap",
+      "website_package_json_react_bootstrap"
+    ],
+    "176": [
+      "website_package_dependencies_react_dom",
+      "website_package_json_react_dom"
+    ],
+    "177": [
+      "website_package_dependencies_react_hook_form",
+      "website_package_json_react_hook_form"
+    ],
+    "178": [
+      "website_package_dependencies_react_hot_toast",
+      "website_package_json_react_hot_toast"
+    ],
+    "179": [
+      "website_package_dependencies_react_modal",
+      "website_package_json_react_modal"
+    ],
+    "180": [
+      "website_package_dependencies_react_router_dom",
+      "website_package_json_react_router_dom"
+    ],
+    "181": [
+      "website_package_dependencies_react_toastify",
+      "website_package_json_react_toastify"
+    ],
+    "182": [
+      "website_package_dependencies_reduxjs_toolkit",
+      "website_package_json_reduxjs_toolkit"
+    ],
+    "183": [
+      "website_package_dependencies_swiper",
+      "website_package_json_swiper"
+    ],
+    "184": [
+      "website_package_dependencies_testing_library_jest_dom",
+      "website_package_json_testing_library_jest_dom"
+    ],
+    "185": [
+      "website_package_dependencies_testing_library_react",
+      "website_package_json_testing_library_react"
+    ],
+    "186": [
+      "website_package_dependencies_testing_library_user_event",
+      "website_package_json_testing_library_user_event"
+    ],
+    "187": [
+      "website_src_components_doctor_dashboard_doctor_doctordashcard",
+      "website_src_components_doctor_dashboard_doctor_doctordashcard_doctordashcard"
+    ],
+    "188": [
+      "website_src_components_dropzone",
+      "website_src_components_dropzone_advanceddropzonedemo"
+    ],
+    "189": [
+      "website_src_components_home_clinicandspecialities_clinic",
+      "website_src_components_home_clinicandspecialities_clinic_availableservicecontent"
+    ],
+    "190": [
+      "website_src_notfound",
+      "website_src_notfound_notfound"
+    ],
+    "191": [
+      "website_src_stripesuccess_cancel",
+      "website_src_stripesuccess_cancel_cancel"
+    ],
+    "192": [
+      "website_src_stripesuccess_success",
+      "website_src_stripesuccess_success_success"
+    ],
+    "193": [
+      "backend_ecosystem_config"
+    ],
+    "194": [
+      "dashboard_postcss_config"
+    ],
+    "195": [
+      "dashboard_redux_api_appointmentapi_usegetdoctorappointmentsquery_usegetpatientappointmentsquery_usegetdoctorpatientsquery_usecreateappointmentmutation_usegetsingleappointmentquery_usegetappointmentedpaymentinfoquery_usegetpatientinvoicesquery_usegetdoctorinvoicesquery_useupdateappointmentmutation_usecreateappointmentbyunauthenticateusermutation_usetrackappointmentmutation"
+    ],
+    "196": [
+      "dashboard_redux_api_authapi_useuserloginmutation_usedoctorsignupmutation_usepatientsignupmutation"
+    ],
+    "197": [
+      "dashboard_redux_api_blogapi_usecreateblogmutation_usedeleteblogmutation_usegetallblogsquery_useupdateblogmutation_usegetsingleblogquery"
+    ],
+    "198": [
+      "dashboard_redux_api_doctorapi_usegetdoctorsquery_usegetdoctorquery_useupdatedoctormutation"
+    ],
+    "199": [
+      "dashboard_redux_api_favouriteapi_usegetfavouritequery_useaddfavouritemutation_useremovefavouritemutation"
+    ],
+    "200": [
+      "dashboard_redux_api_medicineapi_usecreatemedicinemutation_useupdatemedicinemutation_usedeletemedicinemutation"
+    ],
+    "201": [
+      "dashboard_redux_api_patientapi_usegetpatientquery_useupdatepatientmutation"
+    ],
+    "202": [
+      "dashboard_redux_api_prescriptionapi_usecreateprescriptionmutation_usegetallprescriptionsquery_usegetprescriptionquery_usedeleteprescriptionmutation_usegetdoctorprescriptionquery_usegetpatientprescriptionquery_useupdateprescriptionquery_useupdateprescriptionandappointmentmutation"
+    ],
+    "203": [
+      "dashboard_redux_api_reviewsapi_usecreatereviewmutation_usedeletereviewquery_usegetallreviewsquery_usegetdoctorreviewsquery_usegetsinglereviewquery_useupdatereviewquery_usereplyreviewsquery"
+    ],
+    "204": [
+      "dashboard_redux_api_timeslotapi_usegetalltimeslotquery_usedeletetimeslotquery_usegetdoctortimeslotquery_usegettimeslotquery_useupdatetimeslotmutation_usecreatetimeslotmutation_usegetappointmenttimequery"
+    ],
+    "205": [
+      "dashboard_src_components_validation"
+    ],
+    "206": [
+      "dashboard_src_setuptests"
+    ],
+    "207": [
+      "dashboard_vite_config"
+    ],
+    "208": [
+      "website_src_components_doctor_mypatients_mypatients"
+    ],
+    "209": [
+      "website_src_constant_role"
+    ],
+    "210": [
+      "website_src_redux_api_appointmentapi_usegetdoctorappointmentsquery_usegetpatientappointmentsquery_usegetdoctorpatientsquery_usecreateappointmentmutation_usegetsingleappointmentquery_usegetappointmentedpaymentinfoquery_usegetpatientinvoicesquery_usegetdoctorinvoicesquery_useupdateappointmentmutation_usecreateappointmentbyunauthenticateusermutation_usetrackappointmentmutation"
+    ],
+    "211": [
+      "website_src_redux_api_blogapi_usecreateblogmutation_usedeleteblogmutation_usegetallblogsquery_useupdateblogmutation_usegetsingleblogquery"
+    ],
+    "212": [
+      "website_src_redux_api_doctorapi_usegetdoctorsquery_usegetdoctorquery_useupdatedoctormutation"
+    ],
+    "213": [
+      "website_src_redux_api_favouriteapi_usegetfavouritequery_useaddfavouritemutation_useremovefavouritemutation"
+    ],
+    "214": [
+      "website_src_redux_api_medicineapi_usecreatemedicinemutation_useupdatemedicinemutation_usedeletemedicinemutation"
+    ],
+    "215": [
+      "website_src_redux_api_patientapi_usegetpatientquery_useupdatepatientmutation"
+    ],
+    "216": [
+      "website_src_redux_api_prescriptionapi_usecreateprescriptionmutation_usegetallprescriptionsquery_usegetprescriptionquery_usedeleteprescriptionmutation_usegetdoctorprescriptionquery_usegetpatientprescriptionquery_useupdateprescriptionquery_useupdateprescriptionandappointmentmutation"
+    ],
+    "217": [
+      "website_src_redux_api_reviewsapi_usecreatereviewmutation_usedeletereviewquery_usegetallreviewsquery_usegetdoctorreviewsquery_usegetsinglereviewquery_useupdatereviewquery_usereplyreviewsquery"
+    ],
+    "218": [
+      "website_src_redux_api_timeslotapi_usegetalltimeslotquery_usedeletetimeslotquery_usegetdoctortimeslotquery_usegettimeslotquery_useupdatetimeslotmutation_usecreatetimeslotmutation_usegetappointmenttimequery"
+    ],
+    "219": [
+      "website_src_utils_hooks_context_authcontext"
+    ],
+    "220": [
+      "website_src_utils_hooks_usefetch"
+    ],
+    "221": [
+      "website_vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.058699101004759384,
+    "1": 0.05297532656023222,
+    "2": 0.07215686274509804,
+    "3": 0.07215686274509804,
+    "4": 0.06205673758865248,
+    "5": 0.08974358974358974,
+    "6": 0.07557354925775979,
+    "7": 0.11740890688259109,
+    "8": 0.11932773109243698,
+    "9": 0.11942959001782531,
+    "10": 0.11229946524064172,
+    "11": 0.09659090909090909,
+    "12": 0.07126436781609195,
+    "13": 0.10344827586206896,
+    "14": 0.06896551724137931,
+    "15": 0.07407407407407407,
+    "16": 0.15076923076923077,
+    "17": 0.14492753623188406,
+    "18": 0.10869565217391304,
+    "19": 0.15584415584415584,
+    "20": 0.15584415584415584,
+    "21": 0.1341991341991342,
+    "22": 0.1341991341991342,
+    "23": 0.14285714285714285,
+    "24": 0.2,
+    "25": 0.18947368421052632,
+    "26": 0.21052631578947367,
+    "27": 0.19607843137254902,
+    "28": 0.20588235294117646,
+    "29": 0.13333333333333333,
+    "30": 0.15384615384615385,
+    "31": 0.14285714285714285,
+    "32": 0.15384615384615385,
+    "33": 0.2692307692307692,
+    "34": 0.2692307692307692,
+    "35": 0.21794871794871795,
+    "36": 0.24358974358974358,
+    "37": 0.21794871794871795,
+    "38": 0.30303030303030304,
+    "39": 0.24242424242424243,
+    "40": 0.2878787878787879,
+    "41": 0.25757575757575757,
+    "42": 0.38181818181818183,
+    "43": 0.18181818181818182,
+    "44": 0.4,
+    "45": 0.3333333333333333,
+    "46": 0.3333333333333333,
+    "47": 0.37777777777777777,
+    "48": 0.2777777777777778,
+    "49": 0.2222222222222222,
+    "50": 0.3055555555555556,
+    "51": 0.25,
+    "52": 0.35714285714285715,
+    "53": 0.25,
+    "54": 0.35714285714285715,
+    "55": 0.38095238095238093,
+    "56": 0.38095238095238093,
+    "57": 0.4666666666666667,
+    "58": 0.4666666666666667,
+    "59": 0.5333333333333333,
+    "60": 0.4,
+    "61": 0.5333333333333333,
+    "62": 0.5,
+    "63": 0.4,
+    "64": 0.4,
+    "65": 0.5,
+    "66": 0.6666666666666666,
+    "67": 0.6666666666666666,
+    "68": 0.5,
+    "69": 0.6666666666666666,
+    "70": 0.6666666666666666,
+    "71": 0.6666666666666666,
+    "72": 0.6666666666666666,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0
+  },
+  "gods": [
+    {
+      "id": "dashboard_src_components_form_button_button",
+      "label": "Button()",
+      "degree": 40
+    },
+    {
+      "id": "dashboard_src_layout_index_index",
+      "label": "index()",
+      "degree": 29
+    },
+    {
+      "id": "dashboard_src_components_form_input_input",
+      "label": "Input()",
+      "degree": 26
+    },
+    {
+      "id": "dashboard_src_components_modals_modal_modal",
+      "label": "Modal()",
+      "degree": 21
+    },
+    {
+      "id": "dashboard_src_components_form_select_select",
+      "label": "Select()",
+      "degree": 17
+    },
+    {
+      "id": "website_src_components_shared_header_header_header",
+      "label": "Header()",
+      "degree": 17
+    },
+    {
+      "id": "dashboard_src_components_form_textarea_textarea",
+      "label": "Textarea()",
+      "degree": 16
+    },
+    {
+      "id": "website_src_components_doctor_dashboardlayout_dashboardlayout_dashboardlayout",
+      "label": "DashboardLayout()",
+      "degree": 16
+    },
+    {
+      "id": "backend_models_webmodels_webpatient",
+      "label": "WebPatient",
+      "degree": 15
+    },
+    {
+      "id": "website_src_components_shared_footer_footer_footer",
+      "label": "Footer()",
+      "degree": 15
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AttachmentList()",
+      "target": "index()",
+      "source_files": [
+        "Website/src/components/AttachmentList.jsx",
+        "Dashboard/src/Layout/index.jsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "InputAutoCompleteForm()",
+      "target": "updateItem()",
+      "source_files": [
+        "Website/src/components/UI/form/InputAutoCompleteForm.jsx",
+        "Backend/controllers/InvoiceController/Item.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "SelectFormForMedicine()",
+      "target": "updateItem()",
+      "source_files": [
+        "Website/src/components/UI/form/SelectFormForMedicine.jsx",
+        "Backend/controllers/InvoiceController/Item.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "NewMedicalRecord()",
+      "target": "index()",
+      "source_files": [
+        "Dashboard/src/screens/Patients/NewMedicalRecode.jsx",
+        "Dashboard/src/Layout/index.jsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; peripheral node `NewMedicalRecord()` unexpectedly reaches hub `index()`"
+    },
+    {
+      "source": "MenuSelectss()",
+      "target": "index()",
+      "source_files": [
+        "Dashboard/src/components/Form/MenuSelectss.jsx",
+        "Dashboard/src/Layout/index.jsx"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `index()` connect `Layout/index.jsx` to `DashboardLayout.jsx`, `useAuth`, `Form.jsx`, `screens/Appointments.jsx`, `ArchivedPatients.jsx`, `Button`, `Dashboard/src/baseUrl.jsx`, `Datas.jsx`, `CreateInvoice.jsx`, `Receptions.jsx`, `Modal.jsx`, `PatientTabPanel.jsx`, `screens/Dashboard.jsx`?",
+      "why": "High betweenness centrality (0.317) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `AttachmentList()` connect `DashboardLayout.jsx` to `Layout/index.jsx`?",
+      "why": "High betweenness centrality (0.307) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `updateItem()` connect `global.js` to `webcontroller.js`?",
+      "why": "High betweenness centrality (0.243) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `index()` (e.g. with `MenuSelectss()` and `CampaignModal()`) actually correct?",
+      "why": "`index()` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `transporter`, `otpStore`, `__dirname` to the rest of the system?",
+      "why": "368 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `DashboardLayout.jsx` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.058699101004759384 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `patients.js` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05297532656023222 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+.section-specialties-custom {
+  background-color: #ffffff;
+  padding: 100px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.specialties-header {
+  margin-bottom: 50px;
+}
+
+.section-subtitle {
+  color: #0ea5e9;
+  font-weight: 750;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.specialties-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.specialty-card-custom {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.specialty-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+  border-color: rgba(14, 165, 233, 0.3);
+}
+
+.specialty-icon-container {
+  background: rgba(14, 165, 233, 0.06);
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+}
+
+.specialty-card-custom:hover .specialty-icon-container {
+  background: #0ea5e9;
+  transform: rotate(5deg);
+}
+
+.specialty-icon-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+
+.specialty-card-custom:hover .specialty-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+.specialty-info-container h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.specialty-info-container p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .section-specialties-custom {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-specialties-custom {
+    padding: 40px 0;
+  }
+  .specialties-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .specialty-card-custom {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 15px;
+  }
+}

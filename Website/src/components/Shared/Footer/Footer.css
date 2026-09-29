@@ -1,0 +1,154 @@
+.footer-section {
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  color: #94a3b8;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-top {
+  padding: 80px 0 50px;
+}
+
+.footer-widget h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-widget h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  background: #0ea5e9;
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.footer-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.social-icon-btn:hover {
+  background: #0ea5e9;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  color: #94a3b8;
+  font-size: 14.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-links li a:hover {
+  color: #0ea5e9;
+  padding-left: 6px;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 14.5px;
+}
+
+.contact-details li a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details li a:hover {
+  color: #0ea5e9;
+}
+
+.contact-details .contact-icon {
+  color: #0ea5e9;
+  font-size: 16px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 25px 0;
+  background: #0b0f19;
+}
+
+.copyright-text {
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+.developer-credits {
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+.developer-credits a {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.developer-credits a:hover {
+  color: #1977cc;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 60px 0 30px;
+  }
+}

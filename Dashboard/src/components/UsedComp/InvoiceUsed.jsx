@@ -1,0 +1,53 @@
+import React, { useState, useEffect } from 'react';
+import { InvoiceUsedTable } from '../Tables';
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
+import BASE_URL from '../../baseUrl.jsx';
+
+function InvoiceUsed({ token, patientId }) {
+  const navigate = useNavigate();
+  const [invoices, setInvoices] = useState([]);
+
+  useEffect(() => {
+    const fetchInvoices = async () => {
+      try {
+        if (patientId) { 
+          const response = await axios.get(`${BASE_URL}/api/invoices/patient/${patientId}`, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+          setInvoices(response.data);
+        }
+      } catch (error) {
+        console.error('Error fetching invoice data:', error);
+      }
+    };
+
+    fetchInvoices();
+  }, [patientId, token]);
+  const previewInvoice = (id) => {
+    if (id !== undefined) {
+      navigate(`/invoices/preview/${id}`);
+    } else {
+      console.error('Error: Invalid invoice ID');
+    }
+  };
+
+
+  return (
+    <div className="w-full flex flex-col gap-6">
+      <h1 className="text-sm font-semibold text-main">Invoices</h1>
+      <div className="w-full overflow-x-auto">
+        <InvoiceUsedTable
+          data={invoices}
+          functions={{
+            preview: previewInvoice,
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default InvoiceUsed;

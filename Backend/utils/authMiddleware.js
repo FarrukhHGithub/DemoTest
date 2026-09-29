@@ -1,0 +1,25 @@
+export const authenticate = (req, res, next) => {
+    if (
+        req.path === '/api/auth/login' ||
+        req.path === '/api/auth/register' ||
+        req.path === '/api/userauth/login' ||
+        req.path === '/api/userauth/register' ||
+        req.path === '/api/schedule/create' ||
+        req.path === '/api/schedule/' ||
+        req.path === '/api/schedule/past'||
+        req.path === '/api/schedule/:id' ||
+        req.path === '/api/slot' ||
+        req.path === '/api/slot/' ||
+        req.path === '/api/slot/generate' ||
+        req.path === '/api/slot/past' ||
+        req.path.startsWith('/api/slot/')
+    ) {
+        return next();
+    }
+    const token = req.headers.authorization;
+
+    if (!token) {
+        return res.status(401).json({ message: 'Unauthorized' });
+    }
+    next();
+};

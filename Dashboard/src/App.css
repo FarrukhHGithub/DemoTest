@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #05335c;
+  background-color: #f8f9fa;
+}
+::-webkit-scrollbar {
+  /* display: none; */
+}
+input:focus, textarea:focus, select:focus,button:focus{
+  outline: none;
+}
+
+.flex-colo{
+  @apply flex flex-col justify-center items-center;
+}
+
+.flex-rows{
+  @apply flex flex-row justify-center items-center;
+}
+
+.flex-btn{
+  @apply flex justify-between items-center;
+}
+.transitions{
+  @apply transition duration-500 ease-in-out;
+}
+
+.box-shadow{
+  box-shadow: 0px 0px 13px 0px rgba(24,50,83,0.23);
+}
+.box-hover{
+  box-shadow: 0px 0px 21px -6px rgba(19,19,48,0.24);
+}
+
+/* calender */
+.rbc-date-cell{
+  padding: 10px 30px !important;
+  font-size: 12px !important;
+  color: #183253
+}
+.rbc-time-slot .rbc-label{
+  font-size: 12px !important;
+  color: #183253;
+  padding: 10px 20px;
+  text-transform: lowercase !important;
+}
+
+/* siku */
+.rbc-time-header-content .rbc-header,
+.rbc-month-header .rbc-header{
+  font-size: 12px !important;
+  color: #183253;
+height: 50px;
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+font-weight: 600 !important;
+background-color: #F8F9FA;
+text-transform: capitalize !important;
+
+}
+.rbc-agenda-table .rbc-header{
+  font-size: 12px !important;
+  color: #183253;
+  font-weight: 600 !important;
+background-color: #F8F9FA;
+height: 50px;
+padding: 0px 10px !important;
+text-transform: capitalize !important;
+}
+.rbc-time-view{
+  background-color: #fff !important;
+}
+.rbc-show-more{
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  color: #66B5A3 !important;
+}
+.rbc-toolbar .rbc-toolbar-label{
+  font-size: 20px !important;
+  color: #183253;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+}
+.button-fb{
+  box-shadow: 0px 24px 48px 0px rgba(102,181,163,0.65);
+}
+/* picker */
+.react-datepicker{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px !important;
+  color: #183253;
+  text-transform: capitalize !important;
+  border: 1px solid #E8EBEE !important;
+}
+.react-datepicker__day,.react-datepicker__day-name {
+  border-radius: 100% !important;
+  margin:  5px !important;
+padding: 5px 0 !important;
+width: 37px !important;
+color: #7e7e7e !important;
+
+}
+.react-datepicker__day--selected{
+  background-color: #66B5A3 !important;
+  color: #fff !important;
+}
+.react-datepicker__day-name{
+  color: #183253 !important;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item{
+ height: 40px !important;
+ display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+  background-color: #66B5A3 !important;
+  color: #fff !important;
+}
+.react-datepicker__header--time{
+  background-color: #F3F5F7 !important;
+}
+.react-datepicker-time__header{
+  font-size: 14px !important;
+  color: #183253 !important;
+  font-weight: 600 !important;
+}
+.react-datepicker__day--in-range{
+  background: #3291e6 !important;
+  color: #fff !important;
+}
+
+/* Driver.js Custom Popover Styling for Medical Dashboard */
+.driver-popover.medical-dashboard-tour {
+  background-color: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 20px !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid #e2e8f0 !important;
+  font-family: 'Poppins', sans-serif !important;
+  max-width: 380px !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #05335c !important; /* Deep medical blue */
+  margin-bottom: 8px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-description {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #4a5568 !important; /* Slate grey */
+  margin-bottom: 16px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-top: 1px solid #edf2f7 !important;
+  padding-top: 12px !important;
+  margin-top: 12px !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-progress-text {
+  font-size: 12px !important;
+  color: #718096 !important;
+  font-weight: 500 !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-close-btn {
+  color: #a0aec0 !important;
+  font-size: 18px !important;
+  transition: color 0.2s ease !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-close-btn:hover {
+  color: #e53e3e !important;
+}
+
+.driver-popover.medical-dashboard-tour button {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 6px 14px !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-next-btn {
+  background-color: #3b82f6 !important; /* Premium medical blue button */
+  color: #ffffff !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-next-btn:hover {
+  background-color: #2563eb !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-prev-btn {
+  background-color: #edf2f7 !important;
+  color: #4a5568 !important;
+}
+
+.driver-popover.medical-dashboard-tour .driver-popover-prev-btn:hover {
+  background-color: #e2e8f0 !important;
+}
+
+/* Arrow styling overrides for Driver.js v1 */
+.driver-popover.medical-dashboard-tour .driver-popover-arrow {
+  border-color: #ffffff !important;
+}
+
+@media (max-width: 640px) {
+  .driver-popover.medical-dashboard-tour {
+    max-width: 290px !important;
+    padding: 16px !important;
+  }
+}

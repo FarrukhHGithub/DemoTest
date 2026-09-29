@@ -1,0 +1,148 @@
+.section-blog {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.blog-header {
+  margin-bottom: 50px;
+}
+
+.blog-card-custom {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(15, 46, 84, 0.06);
+  border-color: rgba(14, 165, 233, 0.2);
+}
+
+.blog-img-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card-custom:hover .blog-image {
+  transform: scale(1.06);
+}
+
+.blog-tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(15, 46, 84, 0.85);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.blog-author {
+  font-weight: 600;
+  color: #0ea5e9;
+}
+
+.blog-dot {
+  margin: 0 8px;
+}
+
+.blog-date {
+  color: #94a3b8;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.blog-title a {
+  color: #0f2e54;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-title a:hover {
+  color: #0ea5e9;
+}
+
+.blog-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.read-more-link {
+  color: #0ea5e9;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #1977cc;
+  gap: 6px;
+}
+
+.read-time {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .section-blog {
+    padding: 60px 0;
+  }
+}
