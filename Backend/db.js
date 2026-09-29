@@ -3,12 +3,7 @@ import mongoose from "mongoose";
 // Support both MONGODB_URI (Vercel convention) and MONGO_URI (legacy)
 const MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI;
 
-/**
- * Cached Mongoose connection for serverless environments.
- * On Vercel each function invocation may reuse the same Node.js
- * process, so we cache the connection on `global` to avoid opening
- * a new connection on every request.
- */
+
 let cached = global._mongooseCache;
 
 if (!cached) {
@@ -16,7 +11,6 @@ if (!cached) {
 }
 
 const connectToDatabase = async () => {
-    // Return the existing connection if already established
     if (cached.conn) {
         return cached.conn;
     }

@@ -606,8 +606,6 @@ app.use('/api/slot', slotRoutes);
 app.use("/api/patient-history", historyRoutes);
 app.use("/api/web-history", WebHistoryRoutes);
 
-// Only start the HTTP server when running locally.
-// On Vercel, the app is exported as a serverless function handler.
 if (process.env.NODE_ENV !== 'production') {
     const PORT = process.env.PORT || 8800;
     app.listen(PORT, () => {
