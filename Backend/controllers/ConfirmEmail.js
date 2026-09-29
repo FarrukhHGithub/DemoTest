@@ -3,12 +3,12 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.office365.com',
-  port: 587,
+  host: process.env.SMTP_HOST || 'smtp.office365.com',
+  port: parseInt(process.env.SMTP_PORT || '587', 10),
   secure: false,
   auth: {
-    user: 'appointment@avicenahealthcare.com',
-    pass: 'Godaay2024'
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
   },
   tls: {
     ciphers: 'SSLv3'
@@ -31,7 +31,7 @@ const sendAppointmentConfirmationEmail = async (selectValue) => {
     `;
 
     await transporter.sendMail({
-      from: "appointment@avicenahealthcare.com",
+      from: process.env.SMTP_USER,
       to: email,
       subject: "Appointment Confirmation",
       html: htmlContent,
@@ -61,8 +61,8 @@ const sendDoctorAppointmentEmail = async (selectValue) => {
     `;
 
     await transporter.sendMail({
-      from: "appointment@avicenahealthcare.com",
-      to: "appointment@avicenahealthcare.com",
+      from: process.env.SMTP_USER,
+      to: process.env.CLINIC_NOTIFY_EMAIL || process.env.SMTP_USER,
       subject: "New Appointment Scheduled",
       html: htmlContent,
     });

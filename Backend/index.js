@@ -460,7 +460,7 @@ const getSlotsForSpecificPeriod = (timeRanges, duration, maxSlots, dayLabel, exi
     // console.log(`Generated ${slots.length} Slots for ${dayLabel}:`, slots);
     return slots;
 };
-const agenda = new Agenda({ db: { address: process.env.MONGO_URI, collection: 'jobs' } });
+const agenda = new Agenda({ db: { address: process.env.MONGODB_URI || process.env.MONGO_URI, collection: 'jobs' } });
 const CLINIC_TIMEZONE = "Asia/Karachi";
 const SLOT_DURATION = 20; // minutes
 
@@ -502,25 +502,40 @@ agenda.define('delete past slots', async () => {
         console.error('❌ Error deleting past slots:', error);
     }
 });
-agenda.on('ready', async () => {
-    try {
-        await agenda.every('*/1 * * * *', 'create slots');
-        await agenda.every('*/1 * * * *', 'fetch slots'); // Runs every 15 minutes
-        await agenda.every('*/1 * * * *', 'delete past slots');
-        await agenda.start();
-        // console.log('✅ All jobs scheduled and Agenda started.');
-    } catch (error) {
-        console.error('❌ Error scheduling jobs with Agenda:', error);
-    }
-});
-connectToDatabase().then(() => {
-    // console.log('Database connection successful');
-}).catch(error => {
+// Agenda cron jobs only run when the server has a persistent process (local dev / traditional hosting).
+// On Vercel serverless, functions are short-lived — use Vercel Cron Jobs or an external scheduler instead.
+if (process.env.NODE_ENV !== 'production') {
+    agenda.on('ready', async () => {
+        try {
+            await agenda.every('*/1 * * * *', 'create slots');
+            await agenda.every('*/1 * * * *', 'fetch slots'); // Runs every 15 minutes
+            await agenda.every('*/1 * * * *', 'delete past slots');
+            await agenda.start();
+            // console.log('✅ All jobs scheduled and Agenda started.');
+        } catch (error) {
+            console.error('❌ Error scheduling jobs with Agenda:', error);
+        }
+    });
+}
+// Initiate the DB connection eagerly so it is cached for warm serverless invocations.
+connectToDatabase().catch(error => {
     console.error('Database connection error:', error);
 });
-app.use('/uploads', setCors, express.static(path.join(__dirname, 'uploads')));
+// Static file serving for uploads/ only works when running locally.
+// On Vercel, the filesystem is read-only — serve uploaded files from
+// cloud storage (AWS S3, Cloudinary, etc.) instead.
+if (process.env.NODE_ENV !== 'production') {
+    app.use('/uploads', setCors, express.static(path.join(__dirname, 'uploads')));
+}
 function setCors(req, res, next) {
-    const allowedOrigins = ['https://admin.avicenahealthcare.com', 'https://www.avicenahealthcare.com', 'http://localhost:5173', 'http://localhost:5174', 'https://www.avicenahealthcare.com/api', 'http://www.avicenahealthcare.com/api', 'http://localhost:8800'];
+    // Read allowed origins from env; fall back to the production domains.
+    const envOrigins = process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',').map(o => o.trim()) : [];
+    const allowedOrigins = [
+        ...envOrigins,
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'http://localhost:8800',
+    ].filter(Boolean);
 
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
@@ -536,8 +551,15 @@ app.use((req, res, next) => {
     next();
 });
 
+// Build CORS origin list from env variable (comma-separated) + local dev origins.
+const envCorsOrigins = process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',').map(o => o.trim()) : [];
 const corsOptions = {
-    origin: ['https://admin.avicenahealthcare.com', 'https://www.avicenahealthcare.com', 'https://www.avicenahealthcare.com/api', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:8800'],
+    origin: [
+        ...envCorsOrigins,
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'http://localhost:8800',
+    ].filter(Boolean),
     credentials: true,
 };
 
@@ -552,7 +574,7 @@ app.use('/api/medical-records', uploads, medicalRecordRoutes);
 // Google OAuth routes
 app.get('/api/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 app.get('/api/auth/google/callback', passport.authenticate('google', { failureRedirect: '/login' }), (req, res) => {
-    res.redirect('https://www.avicenahealthcare.com');
+    res.redirect(process.env.GOOGLE_OAUTH_SUCCESS_REDIRECT);
 });
 app.use((req, res, next) => {
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
@@ -584,7 +606,13 @@ app.use('/api/slot', slotRoutes);
 app.use("/api/patient-history", historyRoutes);
 app.use("/api/web-history", WebHistoryRoutes);
 
-const PORT = process.env.PORT || 8800;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// Only start the HTTP server when running locally.
+// On Vercel, the app is exported as a serverless function handler.
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = process.env.PORT || 8800;
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
+}
+
+export default app;

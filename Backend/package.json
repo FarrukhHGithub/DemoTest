@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npm install --prefix ./Website && npm run build --prefix ./Website && npm install"
+    "start:prod": "node index.js",
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",

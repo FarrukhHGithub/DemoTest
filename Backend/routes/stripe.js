@@ -26,8 +26,8 @@ router.post("/checkout", async (req, res) => {
             payment_method_types: ["card"],
             line_items: lineItems,
             mode: "payment",
-            success_url: "http://www.avicenahealthcare.com/success",
-            cancel_url: "http://www.avicenahealthcare.com/cancel",
+            success_url: process.env.STRIPE_SUCCESS_URL || "https://www.avicenahealthcare.com/success",
+            cancel_url: process.env.STRIPE_CANCEL_URL || "https://www.avicenahealthcare.com/cancel",
         });
 
         res.json({ id: session.id });

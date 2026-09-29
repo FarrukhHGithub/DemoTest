@@ -7,13 +7,12 @@ export const sendOTP = async (req, res) => {
     const { email } = req.body; // Extract email from request body
 
     const transporter = nodemailer.createTransport({
-      host: 'smtp.office365.com',
-      port: 587,
+      host: process.env.SMTP_HOST || 'smtp.office365.com',
+      port: parseInt(process.env.SMTP_PORT || '587', 10),
       secure: false, // true for 465, false for other ports
       auth: {
-        // user: 'appointment@avicenahealthcare.com', // Replace with your email address
-        user: 'appointment@avicenahealthcare.com',
-        pass: 'Godaay2024' // Replace with your password
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS
       }
     });
 
@@ -26,8 +25,7 @@ export const sendOTP = async (req, res) => {
 
     // Send OTP email
     const info = await transporter.sendMail({
-      // from: 'appointment@avicenahealthcare.com', // Sender address
-      from: 'appointment@avicenahealthcare.com',
+      from: process.env.SMTP_USER,
       to: email, // Send OTP to the provided email address
       subject: 'OTP Verification', // Subject line
       html: `

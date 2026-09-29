@@ -1,13 +1,10 @@
 import multer from "multer";
 
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, 'uploads/');
-    },
-    filename: function (req, file, cb) {
-        cb(null, Date.now() + '-' + file.originalname);
-    },
-});
+// NOTE: Vercel's filesystem is read-only (ephemeral).
+// Files saved to local disk (uploads/) are NOT persisted between requests.
+// Use multer.memoryStorage() and forward req.file.buffer to cloud storage
+// (AWS S3, Cloudinary, etc.) before saving the URL to MongoDB.
+const storage = multer.memoryStorage();
 
 const fileFilter = (req, file, cb) => {
     cb(null, true);

@@ -10,12 +10,12 @@ export const sendEmail = async (email, otp) => {
         const transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'appointment@avicenahealthcare.com',
-                pass: 'iloveyousajjadhussain'
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
         });
         await transporter.sendMail({
-            from: 'appointment@avicenahealthcare.com',
+            from: process.env.EMAIL_USER,
             to: email,
             subject: 'OTP for Verification',
             text: `Your OTP for verification is: ${otp}`

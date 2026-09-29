@@ -9,8 +9,8 @@ router.post('/send-confirmation-email', async (req, res) => {
     // Assuming you receive necessary data in the request body
     const selectValue = req.body;
     await sendAppointmentConfirmationEmail(selectValue);
-    // Send email to appointment@avicenahealthcare.com
-    await sendAppointmentConfirmationEmail({ ...selectValue, email: 'appointment@avicenahealthcare.com' });
+    // Send email to the clinic notification address
+    await sendAppointmentConfirmationEmail({ ...selectValue, email: process.env.CLINIC_NOTIFY_EMAIL || process.env.SMTP_USER });
     res.status(200).json({ message: 'Appointment confirmation email sent successfully' });
   } catch (error) {
     console.error('Error sending appointment confirmation email:', error);

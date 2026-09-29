@@ -1,16 +1,8 @@
 import multer from "multer";
 
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        console.log(`Uploading file to "uploads/" folder:`, file.originalname);
-        cb(null, "uploads/");
-    },
-    filename: (req, file, cb) => {
-        console.log(`File Type: ${file.mimetype}`);
-        console.log(`Original File Name: ${file.originalname}`);
-        cb(null, file.originalname);
-    },
-});
+// NOTE: Vercel's filesystem is read-only — disk uploads are not persisted.
+// Buffer files in memory and upload to cloud storage (S3, Cloudinary, etc.)
+const storage = multer.memoryStorage();
 
 const upload = multer({ storage: storage });
 

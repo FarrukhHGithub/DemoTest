@@ -5,15 +5,10 @@ import multer from 'multer'; // Import multer for handling file uploads
 import { createEmailCampaign, getEmailCampaigns, getEmailCampaignById, updateEmailCampaign, deleteEmailCampaign } from '../controllers/emailCampaignController.js';
 
 const router = express.Router();
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, 'uploads/'); // Destination folder for uploaded files
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.originalname); // Use the original file name for the uploaded file
-    }
-});
-const upload = multer({ storage: storage });
+// NOTE: Vercel's filesystem is read-only — local disk uploads are not persisted.
+// Files are buffered in memory here and should be forwarded to cloud storage
+// (e.g. AWS S3, Cloudinary) in the controller before saving the path to MongoDB.
+const upload = multer({ storage: multer.memoryStorage() });
 router.post('/email-campaigns', upload.single('image'), createEmailCampaign);
 router.get('/email-campaigns', getEmailCampaigns);
 

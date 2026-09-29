@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "controllers/**",
+          "models/**",
+          "routes/**",
+          "utils/**",
+          "templates/**",
+          "db.js",
+          "googleOAuth.js",
+          "middleware.js",
+          "index.js"
+        ]
+      }
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index.js" }
+  ]
+}

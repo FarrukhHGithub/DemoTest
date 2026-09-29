@@ -204,12 +204,12 @@ export const deleteUser = async (req, res) => {
 
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.office365.com',
-  port: 587,
+  host: process.env.SMTP_HOST || 'smtp.office365.com',
+  port: parseInt(process.env.SMTP_PORT || '587', 10),
   secure: false, // true for 465, false for other ports
   auth: {
-    user: 'appointment@avicenahealthcare.com', // Replace with your email address
-    pass: 'Godaay2024' // Replace with your password
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
   }
 });
 
@@ -236,8 +236,8 @@ export const sendEmail = (req, res) => {
 
   // Create email options
   const mailOptions = {
-    from: 'appointment@avicenahealthcare.com', // Use the email address you have permission to send from
-    to: 'appointment@avicenahealthcare.com', // Change this to your recipient email address
+    from: process.env.SMTP_USER,
+    to: process.env.CLINIC_NOTIFY_EMAIL || process.env.SMTP_USER,
     subject: subject,
     html: emailBody // Use HTML for formatted email body
   };

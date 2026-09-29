@@ -32,17 +32,17 @@ export const sendOTP = async (req, res) => {
 
     try {
         const transporter = nodemailer.createTransport({
-            host: 'smtp.office365.com',
-            port: 587,
+            host: process.env.SMTP_HOST || 'smtp.office365.com',
+            port: parseInt(process.env.SMTP_PORT || '587', 10),
             secure: false,
             auth: {
-                user: 'appointment@avicenahealthcare.com',
-                pass: 'Godaay2024'
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS
             }
         });
 
         const mailOptions = {
-            from: 'appointment@avicenahealthcare.com',
+            from: process.env.SMTP_USER,
             to: email,
             subject: 'OTP for Verification',
             html: htmlContent
