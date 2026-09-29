@@ -26,4 +26,7 @@ yarn-error.log*
 
 # AI / Agent files
 MEMORY.md
-.agent
+.agent.history/
+.env
+**/.env
+node_modules/
