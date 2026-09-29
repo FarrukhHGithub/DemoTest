@@ -51,7 +51,7 @@ const AppointmentPage = ({ hideHeader }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [appointmentSelected, setAppointmentSelected] = useState(false); 
+  const [appointmentSelected, setAppointmentSelected] = useState(false);
   const navigation = useNavigate();
 
   const [
@@ -101,7 +101,7 @@ const AppointmentPage = ({ hideHeader }) => {
     setSelectedEndDate(slots.endDateTime);
     setSelectedSlot(slots);
     fetchData();
-    setAppointmentSelected(true); 
+    setAppointmentSelected(true);
   }, [fetchData]);
 
   const next = useCallback((e) => {
@@ -123,7 +123,7 @@ const AppointmentPage = ({ hideHeader }) => {
     setLoading(true);
     try {
       const stripe = await loadStripe(
-        "pk_live_51OtqzOLau0CG7PIQDrIbt4tfqWZqrbZAsVMtebsCrkfGUcrV2n4fvojNtisvZUznjCc8Igj5iVq4xuCfvSuOJvBO00avLXRVpz"
+        "pk_live_51OtqzOL2n4fvLXRVpz777ghjhgjgjgzxczxrtrjljk"
       );
       const body = {
         products: [{ ...selectedService }],
@@ -228,7 +228,7 @@ const AppointmentPage = ({ hideHeader }) => {
     appointmentData.append("startDateTime", startDateTime);
     appointmentData.append("serviceName", serviceName);
     appointmentData.append("price", price);
-    
+
     const savedAttachments = JSON.parse(localStorage.getItem("attachments")) || [];
     if (Array.isArray(savedAttachments) && savedAttachments.length > 0) {
       savedAttachments.forEach((attachment, index) => {
@@ -244,9 +244,9 @@ const AppointmentPage = ({ hideHeader }) => {
         }
       });
     }
-  
+
     const token = localStorage.getItem("token");
-  
+
     try {
       await axios.post(`${BASE_URL}/api/web/`, appointmentData, {
         headers: {
@@ -259,14 +259,14 @@ const AppointmentPage = ({ hideHeader }) => {
           Authorization: `Bearer ${token}`,
         },
       });
-  
+
       toast.success("Appointment scheduled successfully!");
       await axios.delete(`${BASE_URL}/api/schedule/${selectedSlot._id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }
       });
-  
+
       setShowModal(true);
       setShowAppointmentDetails(true);
     } catch (error) {
@@ -318,7 +318,7 @@ const AppointmentPage = ({ hideHeader }) => {
 
   return (
     <>
-      {!hideHeader && <Header appointmentSelected={appointmentSelected}/>}
+      {!hideHeader && <Header appointmentSelected={appointmentSelected} />}
       <div className={hideHeader ? "" : "container"} style={hideHeader ? { marginTop: "0px" } : { paddingTop: "80px" }}>
         <div
           className={hideHeader ? "" : "container"}
@@ -331,8 +331,8 @@ const AppointmentPage = ({ hideHeader }) => {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem", padding: "0 0.5rem" }}>
             <div>
               {current > 0 && (
-                <Button 
-                  size="large" 
+                <Button
+                  size="large"
                   onClick={prev}
                   icon={<ArrowLeftOutlined />}
                   style={{ borderRadius: "8px", fontWeight: "600", color: "#64748b", border: "1px solid #cbd5e1" }}

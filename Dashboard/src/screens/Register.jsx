@@ -62,8 +62,8 @@ function Register() {
     }
     setLoading(true);
     try {
-      await sendOtpEmail('appointment@avicenahealthcare.com');
-      // await sendOtpEmail('bussinessguy5909@gmail.com');
+      // await sendOtpEmail('appointment@avicenahealthcare.com');
+      await sendOtpEmail('bussinessguy5909@gmail.com');
       setIsDentalModalOpen(true);
     } catch (error) {
       console.error('Error sending OTP email:', error);
@@ -109,8 +109,8 @@ function Register() {
         `${BASE_URL}/api/otps/verify-otp`,
         {
           otp: otpCode,
-          email: 'appointment@avicenahealthcare.com',
-          // email: 'bussinessguy5909@gmail.com',
+          // email: 'appointment@avicenahealthcare.com',
+          email: 'bussinessguy5909@gmail.com',
         },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
