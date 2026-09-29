@@ -8,7 +8,7 @@ const useAuthCheck = () => {
         const authToken = localStorage.getItem('token');
         const isAuthenticated = !!authToken;
         setAuthChecked(isAuthenticated);
-    }, []); // Run this effect only once on component mount
+    }, []);
 
     return { authChecked };
 };

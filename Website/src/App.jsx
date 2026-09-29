@@ -15,7 +15,7 @@ axios.interceptors.response.use(
       const { status, config } = error.response;
       const isUserauthUrl = config.url && config.url.includes('/api/userauth/');
       const isLoginUrl = config.url && config.url.includes('/api/userauth/login');
-      
+
       if ((status === 401 && !isLoginUrl) || (status === 404 && isUserauthUrl)) {
         localStorage.removeItem('token');
         localStorage.removeItem('clientId');
@@ -26,8 +26,6 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
-// Lazy load route pages for bundle size optimization
 const Home = React.lazy(() => import('./components/Home/Home/Home'));
 const SignInForm = React.lazy(() => import('./components/Login/SignInForm'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
