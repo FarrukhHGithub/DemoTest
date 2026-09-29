@@ -457,7 +457,6 @@ const getSlotsForSpecificPeriod = (timeRanges, duration, maxSlots, dayLabel, exi
         }
     }
 
-    // console.log(`Generated ${slots.length} Slots for ${dayLabel}:`, slots);
     return slots;
 };
 const agenda = new Agenda({ db: { address: "mongodb+srv://FarrukhBalay:FarrukhBalay@cluster0.kqaf8ub.mongodb.net/", collection: 'jobs' } });
