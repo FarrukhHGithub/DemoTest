@@ -42,3 +42,5 @@ npm start
 ## License
 
 - Contact: [Email](mailto:saqlainshahbaltee@gmail.com.com)
+
+trigger deploy
