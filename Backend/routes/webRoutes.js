@@ -1,7 +1,6 @@
 import express from 'express';
-import { createWeb, getAllWebs, deleteWeb, getWebById,getWebByEmail, getNotifications, markAllNotificationsAsRead,getAllAppointments, getTodayWebAppointments, getTotalWebPatientCount, updateWeb, getWebByIds,getMonthlyEarnings} from '../controllers/webcontroller.js';
+import { createWeb, getAllWebs, deleteWeb, getWebById, getWebByEmail, getNotifications, markAllNotificationsAsRead, getAllAppointments, getTodayWebAppointments, getTotalWebPatientCount, updateWeb, getWebByIds, getMonthlyEarnings } from '../controllers/webcontroller.js';
 import upload from '../utils/multer.js';
-// import multer from 'multer';
 
 
 const router = express.Router();

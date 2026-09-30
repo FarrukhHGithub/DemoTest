@@ -3,7 +3,6 @@ import { getWebHistoryByEmail } from "../controllers/WebHistoryController/histor
 
 const router = express.Router();
 
-// Get Web History By Email
 router.get("/history/:email", getWebHistoryByEmail);
 
 export default router;

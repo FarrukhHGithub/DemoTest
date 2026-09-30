@@ -534,6 +534,9 @@ function setCors(req, res, next) {
         'http://localhost:5173',
         'http://localhost:5174',
         'http://localhost:8800',
+        'https://demo-test-dashboard.vercel.app/',
+        'https://demo-testing-cyan.vercel.app/',
+        'https://demo-backend-deicioz4v-bussinessguy5909-1689s-projects.vercel.app/'
     ].filter(Boolean);
 
     const origin = req.headers.origin;
@@ -558,6 +561,9 @@ const corsOptions = {
         'http://localhost:5173',
         'http://localhost:5174',
         'http://localhost:8800',
+        'https://demo-test-dashboard.vercel.app/',
+        'https://demo-testing-cyan.vercel.app/',
+        'https://demo-backend-deicioz4v-bussinessguy5909-1689s-projects.vercel.app/',
     ].filter(Boolean),
     credentials: true,
 };
