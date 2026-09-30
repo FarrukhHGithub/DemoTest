@@ -19,7 +19,7 @@ const mockReviews = [
             lastName: 'Watson',
             img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150'
         },
-        description: 'Dr. Fayaz is an exceptional family doctor. He took the time to listen to my concerns and explained everything clearly. The continuous care model is exactly what we needed.',
+        description: 'Dr. Miller is an exceptional family doctor. He took the time to listen to my concerns and explained everything clearly. The continuous care model is exactly what we needed.',
         rating: 5
     },
     {
@@ -29,7 +29,7 @@ const mockReviews = [
             lastName: 'Miller',
             img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150'
         },
-        description: 'Excellent clinic service. Booking an appointment was extremely straightforward. The staff was highly professional, and Dr. Fayaz provided top-tier treatment advice.',
+        description: 'Excellent clinic service. Booking an appointment was extremely straightforward. The staff was highly professional, and Dr. Miller provided top-tier treatment advice.',
         rating: 5
     },
     {
@@ -39,7 +39,7 @@ const mockReviews = [
             lastName: 'Taylor',
             img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150'
         },
-        description: 'I highly recommend Avicena Health Care. They are very reliable, professional, and accessible 24/7. It gives my family immense peace of mind to be connected with them.',
+        description: 'I highly recommend MediCare Plus. They are very reliable, professional, and accessible 24/7. It gives my family immense peace of mind to be connected with them.',
         rating: 5
     }
 ];
@@ -71,7 +71,7 @@ const Testimonial = () => {
                 <div className='mb-5 section-title text-center testimonial-header'>
                     <span className="section-subtitle">PATIENT FEEDBACK</span>
                     <h2>What Our Patients Say</h2>
-                    <p className='m-0 text-secondary'>Read real feedback from families who trust Avicena Healthcare for their continuous and comprehensive care.</p>
+                    <p className='m-0 text-secondary'>Read real feedback from families who trust MediCare Plus for their continuous and comprehensive care.</p>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-12 col-xl-10">

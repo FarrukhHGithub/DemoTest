@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCheckCircle, FaRegHeart, FaLocationArrow, FaClock, FaDollarSign, FaStar } from "react-icons/fa";
+import { FaCheckCircle, FaRegHeart, FaLocationArrow, FaClock, FaStar } from "react-icons/fa";
 
 const DoctorWidget = ({ item, handleAddFavourite }) => {
   return (
@@ -38,9 +38,7 @@ const DoctorWidget = ({ item, handleAddFavourite }) => {
           <li>
             <FaClock className='icon' /> {item.availability}
           </li>
-          <li>
-            <FaDollarSign className='icon' /> {item.price}
-          </li>
+
         </ul>
         <div className="d-flex gap-2">
           <Link to={`/appointment`} className="btn btn-outline-info btn-sm view-profile-btn flex-grow-1">View Profile</Link>

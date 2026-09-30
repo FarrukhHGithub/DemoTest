@@ -12,7 +12,7 @@ const mockBlogs = [
         title: '5 Essential Tips for Protecting Your Family\'s Health in Winter',
         description: 'Winter brings cold weather and seasonal flu. Discover the key steps you can take to boost immunity, maintain vitamins, and keep your family safe and healthy this season.',
         img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=400',
-        user: { firstName: 'Dr. Fayaz', lastName: 'Sarwar' },
+        user: { firstName: 'Dr. James', lastName: 'Miller' },
         createdAt: '2024-11-15T10:00:00.000Z',
         tag: 'Family Health',
         readTime: '5 min read'

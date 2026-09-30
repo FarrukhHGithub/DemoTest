@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="row g-4">
                     <div className="col-lg-4 col-md-6">
                         <div className="footer-widget footer-about">
-                            <h3 className="footer-brand">Avicena Health Care</h3>
+                            <h3 className="footer-brand">MediCare Plus</h3>
                             <p className="footer-desc">
                                 Providing whole-person family medical care with distinct expertise, managing complexity, uncertainty, and continuous health needs for all stages of life.
                             </p>
@@ -42,15 +42,15 @@ export default function Footer() {
                             <ul className="contact-details">
                                 <li>
                                     <FaMapMarkerAlt className="contact-icon" />
-                                    <span>London, United Kingdom</span>
+                                    <span>123 Health Street, New York, NY 10001</span>
                                 </li>
                                 <li>
                                     <FaEnvelope className="contact-icon" />
-                                    <a href="mailto:appointment@avicenahealthcare.com">appointment@avicenahealthcare.com</a>
+                                    <a href="mailto:info@medicareplus.com">info@medicareplus.com</a>
                                 </li>
                                 <li>
                                     <FaPhoneAlt className="contact-icon" />
-                                    <a href="tel:+447579389649">+44 7579 389649</a>
+                                    <a href="tel:+12125550123">+1 (212) 555-0123</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,12 +63,12 @@ export default function Footer() {
                     <div className="row align-items-center g-3">
                         <div className="col-md-6 text-center text-md-start">
                             <span className="copyright-text">
-                                &copy; {new Date().getFullYear()} Avicena Health Care. All rights reserved.
+                                &copy; {new Date().getFullYear()} MediCare Plus. All rights reserved.
                             </span>
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <span className="developer-credits">
-                                Developed by <a href="https://netbots.io" target="_blank" rel="noreferrer">NetBots</a>
+                                Designed &amp; Developed by <a href="https://netbots.io/" target="_blank" rel="noreferrer">NetBots (SMC-Private Limited)</a>
                             </span>
                         </div>
                     </div>

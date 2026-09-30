@@ -16,16 +16,15 @@ import 'swiper/css/autoplay';
 const mockDoctors = [
     {
         id: 'mock-1',
-        firstName: 'Dr. Fayaz',
-        lastName: 'Sarwar',
+        firstName: 'Dr. James',
+        lastName: 'Miller',
         designation: 'Consultant Family Physician',
-        specialization: 'MBBS, MRCGP Int.',
+        specialization: 'MD, FAAFP',
         img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=300',
         rating: 5,
         reviewsCount: 52,
-        location: 'London, UK',
+        location: 'New York, NY',
         availability: 'Mon - Sun',
-        price: '£80 - £150'
     },
     {
         id: 'mock-2',
@@ -36,9 +35,8 @@ const mockDoctors = [
         img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300',
         rating: 5,
         reviewsCount: 38,
-        location: 'Manchester, UK',
+        location: 'Chicago, IL',
         availability: 'Mon - Fri',
-        price: '£90 - £160'
     },
     {
         id: 'mock-3',
@@ -49,9 +47,8 @@ const mockDoctors = [
         img: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=300',
         rating: 5,
         reviewsCount: 47,
-        location: 'Birmingham, UK',
+        location: 'Los Angeles, CA',
         availability: 'Tue - Thu',
-        price: '£100 - £180'
     }
 ];
 
@@ -78,7 +75,7 @@ const BookDoctor = () => {
 
     // Memoize final display doctors list to avoid re-computations
     const displayDoctors = useMemo(() => {
-        return (!isLoading && !isError && data?.doctors?.length > 0) 
+        return (!isLoading && !isError && data?.doctors?.length > 0)
             ? data.doctors.map(d => ({
                 id: d.id,
                 firstName: d.firstName,
@@ -88,10 +85,10 @@ const BookDoctor = () => {
                 img: d.img || 'https://via.placeholder.com/150',
                 rating: 5,
                 reviewsCount: 24,
-                location: 'London, UK',
+                location: 'New York, NY',
                 availability: 'Available on Fri',
-                price: '£100 - £200'
-              }))
+                price: '$100 - $200'
+            }))
             : mockDoctors;
     }, [data, isLoading, isError]);
 

@@ -48,7 +48,7 @@ const Gallery = () => {
                                     <div className="gallery-img-container" key={`doc-${index}`}>
                                         <Image 
                                             src={src} 
-                                            alt={`Dr. Fayaz Sarwar ${index + 1}`} 
+                                            alt={`Dr. James Miller ${index + 1}`} 
                                             wrapperStyle={{ width: '100%' }}
                                             loading="lazy"
                                             style={{ 

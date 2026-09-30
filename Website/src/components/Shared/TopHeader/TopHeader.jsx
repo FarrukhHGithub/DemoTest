@@ -9,11 +9,11 @@ const TopHeader = () => {
                 <div className="contact-info d-flex flex-wrap align-items-center justify-content-center">
                     <div className="contact-item d-flex align-items-center">
                         <FaEnvelope className='contact-icon'/> 
-                        <a href="mailto:appointment@avicenahealthcare.com">appointment@avicenahealthcare.com</a>
+                        <a href="mailto:info@medicareplus.com">info@medicareplus.com</a>
                     </div>
                     <div className="contact-item d-flex align-items-center">
                         <FaPhoneAlt className='contact-icon'/> 
-                        <a href="tel:+447579389649">+44 7579 389649</a> 
+                        <a href="tel:+12125550123">+1 (212) 555-0123</a> 
                     </div>
                 </div>
                 <div className="d-none d-lg-flex social-links align-items-center">

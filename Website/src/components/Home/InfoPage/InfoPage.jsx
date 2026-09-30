@@ -12,15 +12,15 @@ const InfoPage = () => {
             <div className="content">
               <h3>About Us</h3>
               <div className="about-doctor-card mb-3">
-                <h4 className="doc-name">Dr. Fayaz Sarwar</h4>
-                <div className="doc-credentials">MBBS, MRCGP Int. (Trained and working in the UK)</div>
-                <div className="doc-tagline">Founder of Avicena Health Care</div>
-                <div className="doc-slogan">"Your health, our responsibility."</div>
+                <h4 className="doc-name">Dr. James Miller</h4>
+                <div className="doc-credentials">MD, FAAFP (Board Certified Family Medicine)</div>
+                <div className="doc-tagline">Medical Director, MediCare Plus</div>
+                <div className="doc-slogan">"Compassionate care for every stage of life."</div>
               </div>
               <div className="doc-expertise">
                 <h5>Expertise</h5>
                 <p>
-                  I am a consultant in family health with distinct expertise and experience in providing whole-person medical care while managing the complexity, uncertainty, and risk associated with continuous care. To simplify, I am your family doctor and will look after each member of your family from before birth to death.
+                  I am a consultant in family health with distinct expertise and experience in providing whole-person medical care while managing the complexity, uncertainty, and risk associated with continuous care. I serve as your dedicated family doctor, caring for each member of your family across all stages of life.
                 </p>
                 <p className="mt-2">
                   I strive to provide comprehensive and equitable care for everyone, taking into account their healthcare needs, stage of life, and background. I work in, connect with, and lead multidisciplinary teams that care for people and their families, respecting the context in which they live, aiming to ensure all of their physical and mental health needs are met.
@@ -47,7 +47,7 @@ const InfoPage = () => {
                   <div className="icon-box mt-4 mt-xl-0">
                     <FaHeadset className="icon" />
                     <h4>Emergency Cases</h4>
-                    <h6 className="text-secondary">+44 7579 389649</h6>
+                    <h6 className="text-secondary">+1 (212) 555-0199</h6>
                     <p>
                       Reach out to our reliable emergency contact for immediate
                       assistance and reassurance.

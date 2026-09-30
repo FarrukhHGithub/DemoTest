@@ -31,7 +31,7 @@ const ContactInfo = () => {
           </div>
           <div>
             <h5 style={{ color: "#ffffff", margin: 0, fontSize: "15px", fontWeight: "600" }}>Location</h5>
-            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>1212 UK 03214</p>
+            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>123 Health Street, New York, NY 10001</p>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ const ContactInfo = () => {
           </div>
           <div>
             <h5 style={{ color: "#ffffff", margin: 0, fontSize: "15px", fontWeight: "600" }}>Email</h5>
-            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>fayyaz_sarwar@hotmail.com</p>
+            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>info@medicareplus.com</p>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const ContactInfo = () => {
           </div>
           <div>
             <h5 style={{ color: "#ffffff", margin: 0, fontSize: "15px", fontWeight: "600" }}>Call</h5>
-            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>+44 7579 389649</p>
+            <p style={{ color: "rgba(255,255,255,0.85)", margin: 0, fontSize: "13px" }}>+1 (212) 555-0123</p>
           </div>
         </div>
       </div>
