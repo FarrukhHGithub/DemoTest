@@ -18,12 +18,13 @@ export const sendOTP = async (req, res) => {
 
     // Generate a random OTP (e.g., a 6-digit number)
     const OTP = Math.floor(100000 + Math.random() * 900000); // Generate a 6-digit OTP
-    // console.log('OTP:', OTP);
+    console.log('OTP generated (email disabled):', OTP);
 
     // Store the OTP for the user
     otpStore[email] = OTP.toString(); // Store OTP with the email provided in the request body
 
-    // Send OTP email
+    /* 
+    // Send OTP email - temporarily commented out as requested
     const info = await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: email, // Send OTP to the provided email address
@@ -38,6 +39,8 @@ export const sendOTP = async (req, res) => {
     });
 
     console.log('Message sent: %s', info.messageId);
+    */
+
     res.status(200).json({ success: true, message: 'OTP sent successfully' });
   } catch (error) {
     console.error('Error sending OTP:', error);
