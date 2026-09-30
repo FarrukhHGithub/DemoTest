@@ -62,12 +62,14 @@ function Register() {
     }
     setLoading(true);
     try {
-      // await sendOtpEmail('appointment@avicenahealthcare.com');
-      await sendOtpEmail('bussinessguy5909@gmail.com');
-      setIsDentalModalOpen(true);
+      // OTP bypassed:
+      // await sendOtpEmail('bussinessguy5909@gmail.com');
+      // setIsDentalModalOpen(true);
+      
+      await registerUser();
     } catch (error) {
-      console.error('Error sending OTP email:', error);
-      toast.error('An error occurred while sending OTP email. Please try again.');
+      console.error('Error in registration flow:', error);
+      toast.error('An error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
