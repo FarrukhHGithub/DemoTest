@@ -24,7 +24,6 @@ const connectToDatabase = async () => {
                 return mongooseInstance;
             })
             .catch((error) => {
-                // Clear the cached promise so the next call retries
                 cached.promise = null;
                 console.error("❌ MongoDB connection error:", error.message);
                 throw error;

@@ -1,6 +1,5 @@
 // utils/emailUtil.js
 
-// Import necessary libraries or modules for sending emails
 import nodemailer from 'nodemailer';
 export const generateOTP = () => {
     return Math.floor(100000 + Math.random() * 900000).toString();
