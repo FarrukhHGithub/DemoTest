@@ -6,7 +6,7 @@ const paymentSchema = new mongoose.Schema({
     items: [{ type: String, required: true }], // Adjusted to an array of strings
     date: { type: Date, default: Date.now },
     dueDate: { type: Date },
-    paidBy: { type: String }, // Assuming this represents the entity who paid
+    paidBy: { type: String },
     currency: { type: String },
     subTotal: { type: Number, required: true },
     discount: { type: Number, required: true },

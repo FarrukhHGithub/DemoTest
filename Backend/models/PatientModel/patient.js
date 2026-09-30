@@ -40,7 +40,6 @@ const PatientSchema = new Schema(
       required: true,
     },
 
-    // ===== Service Details =====
     serviceId: {
       type: Schema.Types.ObjectId,
       ref: "Service",
