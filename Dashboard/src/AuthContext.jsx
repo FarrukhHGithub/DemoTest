@@ -6,7 +6,6 @@ export const useAuth = () => {
   return useContext(AuthContext);
 };
 
-// ✅ Helper function to check token expiry
 const isTokenValid = (token) => {
   try {
     const decoded = jwtDecode(token);
