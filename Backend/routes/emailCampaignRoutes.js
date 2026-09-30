@@ -7,7 +7,6 @@ import { createEmailCampaign, getEmailCampaigns, getEmailCampaignById, updateEma
 const router = express.Router();
 // NOTE: Vercel's filesystem is read-only — local disk uploads are not persisted.
 // Files are buffered in memory here and should be forwarded to cloud storage
-// (e.g. AWS S3, Cloudinary) in the controller before saving the path to MongoDB.
 const upload = multer({ storage: multer.memoryStorage() });
 router.post('/email-campaigns', upload.single('image'), createEmailCampaign);
 router.get('/email-campaigns', getEmailCampaigns);

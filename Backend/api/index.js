@@ -7,7 +7,6 @@ import connectToDatabase from '../db.js';
 import app from '../index.js';
 
 // Ensure the DB connection is established before the first request is handled.
-// Subsequent invocations on the same warm instance will hit the cached connection.
 await connectToDatabase();
 
 export default app;

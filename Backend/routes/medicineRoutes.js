@@ -3,11 +3,10 @@ import { getAllMedicines, createMedicine, getMedicineById, updateMedicine, delet
 
 const router = express.Router();
 
-// Routes for medicines
 router.get('/', getAllMedicines);
 router.post('/', createMedicine);
 router.get('/:id', getMedicineById);
-router.put('/:id', updateMedicine); 
-router.delete('/:id', deleteMedicine); 
+router.put('/:id', updateMedicine);
+router.delete('/:id', deleteMedicine);
 
 export default router;

@@ -3,7 +3,6 @@ import { getPatientHistoryByEmail } from "../controllers/HistoryController/histo
 
 const router = express.Router();
 
-// GET history by email
 router.get("/:email", getPatientHistoryByEmail);
 
 export default router;
