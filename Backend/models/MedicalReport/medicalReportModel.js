@@ -17,7 +17,7 @@ const medicalRecordSchema = new mongoose.Schema(
         },
         treatment: {
             type: [{
-                name: String, // Name of the treatment
+                name: String,
                 checked: Boolean // Whether the treatment is checked or not
             }],
             required: true

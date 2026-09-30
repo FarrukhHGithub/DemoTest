@@ -1,4 +1,3 @@
-// healthInfoModel.js
 
 import mongoose from 'mongoose';
 

@@ -1,4 +1,3 @@
-// models/Invoice.js
 import mongoose from 'mongoose';
 
 const invoiceSchema = new mongoose.Schema({
@@ -7,7 +6,7 @@ const invoiceSchema = new mongoose.Schema({
         ref: 'Patient',
         required: true
     },
- 
+
     services: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Service',
@@ -16,7 +15,7 @@ const invoiceSchema = new mongoose.Schema({
     status: {
         type: String,
         default: 'unpaid'
-      },
+    },
     invoiceItems: [{
         name: String,
         price: Number,
@@ -28,7 +27,7 @@ const invoiceSchema = new mongoose.Schema({
         default: Date.now
     },
     dueDate: Date
-    
+
 });
 
 invoiceSchema.index({ patient: 1 });
