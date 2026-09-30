@@ -522,7 +522,6 @@ connectToDatabase().catch(error => {
 });
 // Static file serving for uploads/ only works when running locally.
 // On Vercel, the filesystem is read-only — serve uploaded files from
-// cloud storage (AWS S3, Cloudinary, etc.) instead.
 if (process.env.NODE_ENV !== 'production') {
     app.use('/uploads', setCors, express.static(path.join(__dirname, 'uploads')));
 }
