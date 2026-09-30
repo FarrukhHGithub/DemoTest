@@ -533,6 +533,7 @@ function setCors(req, res, next) {
         'http://localhost:5173',
         'http://localhost:5174',
         'http://localhost:8800',
+        'https://demo-backend-neon.vercel.app',
         'https://demo-test-dashboard.vercel.app',
         'https://demo-testing-cyan.vercel.app',
         'https://demo-backend-deicioz4v-bussinessguy5909-1689s-projects.vercel.app'
