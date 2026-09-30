@@ -158,7 +158,7 @@ export function usePatientProfile() {
   }, []);
 
   const verifyOtp = useCallback(async (otpType) => {
-    const email = "appointment@avicenahealthcare.com";
+    const email = "info@medicareplus.com";
     try {
       const response = await axios.post(
         `${BASE_URL}/api/otp/verify-otp`,
@@ -190,7 +190,7 @@ export function usePatientProfile() {
       const token = localStorage.getItem("token");
       const response = await axios.post(
         `${BASE_URL}/api/otp/send-otp-to-doctor`,
-        { email: "appointment@avicenahealthcare.com", otpType: "dental" },
+        { email: "info@medicareplus.com", otpType: "dental" },
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
